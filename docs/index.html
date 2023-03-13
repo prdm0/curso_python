@@ -12,7 +12,6 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.335">
 <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Pedro Rafael D. Marinho Departamento de Estatística - UFPB ">
-<meta name="dcterms.date" content="2023-09-03">
 <title>Programação Estatística I (Python)</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -409,7 +408,7 @@ Prof.&nbsp;Dr.&nbsp;Pedro Rafael D. Marinho<br>Departamento de Estatística - UF
 </div>
 </div>
 
-  <p class="date">09/03/2023</p>
+  <p class="date">13/03/2023</p>
 </section><section class="slide level2"><div class="cell">
 
 </div>
@@ -445,8 +444,8 @@ Prof.&nbsp;Dr.&nbsp;Pedro Rafael D. Marinho<br>Departamento de Estatística - UF
 </section><section id="meu-segundo-lar" class="slide level2" data-background-color="black" data-background-image="https://raw.githubusercontent.com/prdm0/imagens/main/foto_aerea_ufpb.jpeg" data-background-size="1600px" data-background-repeat="repeat" data-background-opacity="0.35"><h2>Meu segundo lar</h2>
 <div class="cell" width="100" height="100">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-9006a34c6f52e494659a" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-9006a34c6f52e494659a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addMarkers","args":[-7.1404,-34.846199,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"limits":{"lat":[-7.1404,-7.1404],"lng":[-34.846199,-34.846199]},"setView":[[-7.1404,-34.846199],37,{"maxWidth":1500,"minWidth":1600,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script><p>Departamento de Estatística da UFPB.</p>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-59ef0ef9f9233ae516f9" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-59ef0ef9f9233ae516f9">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addMarkers","args":[-7.1404,-34.846199,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"limits":{"lat":[-7.1404,-7.1404],"lng":[-34.846199,-34.846199]},"setView":[[-7.1404,-34.846199],37,{"maxWidth":1500,"minWidth":1600,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script><p>Departamento de Estatística da UFPB.</p>
 </div>
 </div>
 </section></section><section><section id="section-2" class="title-slide slide level1 title center"><h1></h1>
@@ -1913,236 +1912,309 @@ cos(x, /)
 <pre><code>True</code></pre>
 </div>
 </div>
-<!-- ## Conversões de tipos de dados {background-image="imgs/rawpixel/image-from-rawpixel-id-5945709-menor.jpg" background-position="right" background-size="contain"} -->
-<!-- <br> -->
-<!-- ::: columns -->
-<!-- ::: {.column width="60%"} -->
-<!-- Se você é novo em programação, o que pode parecer mais estranho no -->
-<!-- exemplo anterior é que o número 65 foi convertido para o caracter `"A"` -->
-<!-- e para o valor `True`, ao utilizarmos as funções de conversão de tipos -->
-<!-- `chr` e `bool`, respectivamente. -->
-<!-- <br> -->
-<!-- Em Python, assim como ocorre em diversas outras linguagens, qualquer -->
-<!-- número diferente de zero é convertido para `True` ao utilizar a -->
-<!-- conversão para o tipo booleano, sendo `False` a conversão do número -->
-<!-- zero. -->
-<!-- <br> -->
-<!-- <br> Já a conversão do número 65 para o caracter `"A"` se deve a íntima -->
-<!-- relação entre números interios de 0 a 255 para caracteres da [Tabela -->
-<!-- ASCII](http://www.redimovel.com.br/ceal/so/tabela-ascii.htm). Por -->
-<!-- exemplo, `print(chr(64))` a string composta pelo character `@`. -->
-<!-- ::: -->
-<!-- ::: {.column width="40%"} -->
-<!-- ::: -->
-<!-- ::: -->
-<!-- ## Operação com strings -->
-<!-- <br> -->
-<!-- Em Python, é possível realizar operações em variáveis do tipo strings. -->
-<!-- Strings são cadeias de caracteres, como por exemplo, -->
-<!-- `print("Olá, bem vindo ao curso"`) a frase entre aspas que é passada -->
-<!-- como argumento para a função `print()`. -->
-<!-- <br> -->
-<!-- [Exemplo]{.red} (contatenação): concatenando duas ou mais strings: -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- nome = "Joãozinho" -->
-<!-- str_1 = "Eu, " -->
-<!-- str_2 = nome -->
-<!-- str_3 = ", serei um grande programador" -->
-<!-- str_4 = " de Python!" -->
-<!-- # Concatenando as strings com o operador + -->
-<!-- print(str_1 + str_2 + str_3 + str_4) -->
-<!-- ``` -->
-<!-- ## Operação com strings -->
-<!-- <br> -->
-<!-- Você também poderá utilizar o operador de multiplicação `*` para repetir -->
-<!-- uma string. Também é possível obter a quantidade de caracteres de uma -->
-<!-- dada string, utilizando a função `len()` ou o método Dunder ( -->
-<!-- `__len__()`) encapsulado em um objeto do tipo `str`. -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: repetindo, uma string qualquer, em um total igual à -->
-<!-- metade do comprimento da string arredondado para cima: -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- import math -->
-<!-- str_qualquer = "\tLero lero, ...\n" -->
-<!-- print(str_qualquer * math.ceil(len(str_qualquer)/2)) -->
-<!-- ``` -->
-<!-- <br> -->
-<!-- **Observação**: os caracteres `\t` e `\n` em uma string referem-se à um -->
-<!-- único caracter. São caracteres especiais que denotam **tabulação** e -->
-<!-- **nova linha**, respectivamente. -->
-<!-- ## Composição de string -->
-<!-- <br> -->
-<!-- Poderemos compor strings utilizando alguns marcadores ("placeholders"). -->
-<!-- São eles: -->
-<!-- <br> -->
-<!-- | Marcador | Tipo             | -->
-<!-- |----------|------------------| -->
-<!-- | `%d`     | Números inteiros | -->
-<!-- | `%f`     | Números decimais | -->
-<!-- | `%s`     | Strings          | -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: Considere as variáveis `nome = "Dennis Ritchie"`, -->
-<!-- `importancia = "criador da linguagem C"`, `ano = 2011`. Vamos construir -->
-<!-- a string `"Dennis Ritchie, criador da linguagem C", faleceu em 2011."`. -->
-<!-- Para isso, poderemos aproveitar as informações que estão contidas nas -->
-<!-- variáveis `nome`, `importancia` e `ano`. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- # nome e importancia são variáveis do tipo str (são strings): -->
-<!-- nome = "Dennis Ritchie" -->
-<!-- importancia = "criador da linguagem C" -->
-<!-- # a variável ano é do tipo int: -->
-<!-- ano = 2011 -->
-<!-- # Montando a string que desejamos: -->
-<!-- print("%s, %s, faleceu em %d." % (nome, importancia, ano)) -->
-<!-- ``` -->
-<!-- ## Composição de string -->
-<!-- <br> -->
-<!-- Podemos também incrementar os operadores `%d`, `%f` e `%s` para -->
-<!-- flexibilizar um pouco mais a formatação, caso seja necessário, adequando -->
-<!-- melhor a saída com o uso de operadores de largura de campo. -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: estude o exemplo que segue: -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- nome = "Sofia" -->
-<!-- idade = 35 -->
-<!-- altura = 171.5 -->
-<!-- medida = "cm" -->
-<!-- print("->%20s, tem %03d anos e %6.2f de altura" % (nome, idade, altura)) -->
-<!-- # Note o sinal de '-': -->
-<!-- print("->%-20s, tem %03d anos e %-10.2f de altura" % (nome, idade, altura)) -->
-<!-- ``` -->
-<!-- ## Composição de string -->
-<!-- <br> -->
-<!-- O sinal de negativo no exemplo anterior informa que o elemento deverá -->
-<!-- ser alinhado à esquerda. -->
-<!-- <br> -->
-<!-- A notação `%numeros`, informa qual a quantidade de espaço para os -->
-<!-- caracteres devem ser reservado para a string. Se uma quantidade inferior -->
-<!-- for reservada, a linguagem Python irá negligenciar essa informação e -->
-<!-- imprimirá a string inteira. Tente fazer -->
-<!-- `print("%1s" % ("Pedro Rafael"))`. -->
-<!-- <br> -->
-<!-- A notação `%a.bf` para números decimais, informa que deverá reservar um -->
-<!-- espaço de tamanho `a` para representar o número, e este número será -->
-<!-- impresso com `b` casas decimais. A informação `a` deverá incluir o ponto -->
-<!-- como parte do número. Por exemplo, rode o código -->
-<!-- `print("%10.2f" % (10))`. -->
-<!-- <br> -->
-<!-- ::: fragment -->
-<!-- [Exemplo]{.red}: Poderemos preencher a esquerda com 0, caso tenhamos -->
-<!-- deixado muito espaço para representação de um número. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- import math -->
-<!-- numero_pi = math.pi -->
-<!-- numero_euler = math.e -->
-<!-- print("O número de Euler é %4.2f\nO número Pi é %4.2f" % (numero_euler, numero_pi)) -->
-<!-- ``` -->
-<!-- ::: -->
-<!-- ## Composição de string -->
-<!-- <br> -->
-<!-- Uma forma mais moderna de compor strings é usando o método `format()`. -->
-<!-- Considere o próximo exemplo. -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: considere o exemplo abaixo, onde utilizamos o método -->
-<!-- `format()`. Note que a linguagem Python é zero of set, ou seja, é -->
-<!-- "zero-based", o que significa que a indexação começa por 0. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- nome = "Maria" -->
-<!-- idade = 23 -->
-<!-- # Usando o método format: -->
-<!-- print("Meu nome é {} e tenho {}".format(nome, idade)) -->
-<!-- # Podemos passar as posições entre as chaves: -->
-<!-- print("Tenho {1} e me chamo {0}".format(nome, idade)) -->
-<!-- ``` -->
-<!-- ## Formatação de alinhamento -->
-<!-- <br> -->
-<!-- Utilizando o método format, também poderemos especificar "configurar" a -->
-<!-- máscara para impressão dos dados, isto é, poderemos manipular a [largura -->
-<!-- de campo]{.orange}. Também podemos utilizar [formatação de -->
-<!-- alinhamento]{.red} no método `format()`. São elas: -->
-<!-- <br> -->
-<!-- | Formatação | Exemplo     | Descrição                                                             | -->
-<!-- |--------------|--------------|---------------------------------------------| -->
-<!-- | `{:<}`     | `"{:<10}"`  | Alinha à esquerda e ocupa no mínimo 10 caracteres                     | -->
-<!-- | `{:>}`     | `"{:>10}"`  | Alinha à direita e ocupa no mínimo 10 caracteres                      | -->
-<!-- | `{:^}`     | `"{:^10}"`  | Centraliza e ocupa no mínimo 10 caracteres                            | -->
-<!-- | `{:=^10}`  | `"{:=^10}"` | Centraliza e ocupa no mínimo 10 caracteres, justificando para o sinal | -->
-<!-- | `{:0=3d}`  | `"{:0=3d}"` | Alinha à direita, preenche com zeros e ocupa no mínimo 3 caracteres   | -->
-<!-- | `{:x<4}`   | `"{:x<4}"`  | Alinha à esquerda e preenche com "x" e ocupa no mínimo 4 caracteres   | -->
-<!-- | `{:b>5}`   | `"{:b>5}"`  | Alinha à direita e preenche com "b" e ocupa no mínimo 5 caracteres    | -->
-<!-- ## Formatação de alinhamento -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: considere o exemplo que segue. Olhe com cuidado cada -->
-<!-- uma das formatações. Entender bem elas ajudará você organizar a saída -->
-<!-- das suas funções. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- print("{:<10}".format("left"))     # "left     " -->
-<!-- print("{:>10}".format("right"))    # "     right" -->
-<!-- print("{:^10}".format("center"))   # "  center  " -->
-<!-- print("{:=^10}".format("center"))  # "==center==" -->
-<!-- print("{:0=3d}".format(5))         # "005" -->
-<!-- print("{:x<4}".format("a"))        # "axxx" -->
-<!-- print("{:b>5}".format(2))          # "bbb10" -->
-<!-- ``` -->
-<!-- ## Formatação de alinhamento -->
-<!-- <br> -->
-<!-- [Exercício]{.red}: Considere os objetos `nome`, `idade` e `salario`, -->
-<!-- conforme abaixo: -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- nome = "João da Silva" -->
-<!-- idade = 38 -->
-<!-- salario = 12500.37 -->
-<!-- ``` -->
-<!-- <br> -->
-<!-- Monte uma f-string `s`, tal que `print(s)` retorne: -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| echo: false -->
-<!-- #| include: true -->
-<!-- s = f"Nome: [{nome:+<20}], Idade: [{idade:0>4}], Salário: [{salario:*^15.3f}]" -->
-<!-- print(s) -->
-<!-- ``` -->
-<!-- ## Formatação de alinhamento -->
-<!-- <br> -->
-<!-- [Exercício]{.red}: Considere o código que segue: -->
-<!-- <br> -->
-<!-- ``` python -->
-<!-- nome = "Sofia" -->
-<!-- idade = 35 -->
-<!-- altura = 171.5 -->
-<!-- medida = "cm" -->
-<!-- ``` -->
-<!-- <br> -->
-<!-- Utilizando o método `format()`, os operadores de alinhamento e um único -->
-<!-- `print()`, implemente um código que forneça a saída que segue: -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| echo: false -->
-<!-- nome = "Sofia" -->
-<!-- idade = 35 -->
-<!-- altura = 171.5 -->
-<!-- medida = "cm" -->
-<!-- print("Nome = {0:.<50}\nIdade = {1:_^10}\nAltura = {2:.=11.2f}{3}".format(nome, idade, altura, medida)) -->
-<!-- ``` -->
-<!-- ## Formatação de alinhamento -->
-<!-- <br> <br> -->
-<!-- [Solução]{.red}: -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- nome = "Sofia" -->
-<!-- idade = 35 -->
-<!-- altura = 171.5 -->
-<!-- medida = "cm" -->
-<!-- print("Nome = {0:.<50}\nIdade = {1:_^10}\nAltura = {2:.=11.2f}{3}".format(nome, idade, altura, medida)) -->
-<!-- ``` -->
+</section><section id="conversões-de-tipos-de-dados-1" class="slide level2" data-background-image="imgs/rawpixel/image-from-rawpixel-id-5945709-menor.jpg" data-background-position="right" data-background-size="contain"><h2>Conversões de tipos de dados</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Se você é novo em programação, o que pode parecer mais estranho no exemplo anterior é que o número 65 foi convertido para o caracter <code>"A"</code> e para o valor <code>True</code>, ao utilizarmos as funções de conversão de tipos <code>chr</code> e <code>bool</code>, respectivamente.</p>
+<p><br></p>
+<p>Em Python, assim como ocorre em diversas outras linguagens, qualquer número diferente de zero é convertido para <code>True</code> ao utilizar a conversão para o tipo booleano, sendo <code>False</code> a conversão do número zero.</p>
+<p><br></p>
+<p><br> Já a conversão do número 65 para o caracter <code>"A"</code> se deve a íntima relação entre números interios de 0 a 255 para caracteres da <a href="http://www.redimovel.com.br/ceal/so/tabela-ascii.htm">Tabela ASCII</a>. Por exemplo, <code>print(chr(64))</code> a string composta pelo character <code>@</code>.</p>
+</div><div class="column" style="width:40%;">
+
+</div>
+</div>
+</section><section id="operação-com-strings" class="slide level2"><h2>Operação com strings</h2>
+<p><br></p>
+<p>Em Python, é possível realizar operações em variáveis do tipo strings. Strings são cadeias de caracteres, como por exemplo, <code>print("Olá, bem vindo ao curso"</code>) a frase entre aspas que é passada como argumento para a função <code><a href="https://rdrr.io/r/base/print.html">print()</a></code>.</p>
+<p><br></p>
+<p><span class="red">Exemplo</span> (contatenação): concatenando duas ou mais strings:</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1"></a>nome <span class="op">=</span> <span class="st">"Joãozinho"</span></span>
+<span id="cb57-2"><a href="#cb57-2"></a>str_1 <span class="op">=</span> <span class="st">"Eu, "</span></span>
+<span id="cb57-3"><a href="#cb57-3"></a>str_2 <span class="op">=</span> nome</span>
+<span id="cb57-4"><a href="#cb57-4"></a>str_3 <span class="op">=</span> <span class="st">", serei um grande programador"</span></span>
+<span id="cb57-5"><a href="#cb57-5"></a>str_4 <span class="op">=</span> <span class="st">" de Python!"</span></span>
+<span id="cb57-6"><a href="#cb57-6"></a></span>
+<span id="cb57-7"><a href="#cb57-7"></a><span class="co"># Concatenando as strings com o operador +</span></span>
+<span id="cb57-8"><a href="#cb57-8"></a><span class="bu">print</span>(str_1 <span class="op">+</span> str_2 <span class="op">+</span> str_3 <span class="op">+</span> str_4)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Eu, Joãozinho, serei um grande programador de Python!</code></pre>
+</div>
+</div>
+</section><section id="operação-com-strings-1" class="slide level2"><h2>Operação com strings</h2>
+<p><br></p>
+<p>Você também poderá utilizar o operador de multiplicação <code>*</code> para repetir uma string. Também é possível obter a quantidade de caracteres de uma dada string, utilizando a função <code>len()</code> ou o método Dunder ( <code>__len__()</code>) encapsulado em um objeto do tipo <code>str</code>.</p>
+<p><br></p>
+<p><span class="red">Exemplo</span>: repetindo, uma string qualquer, em um total igual à metade do comprimento da string arredondado para cima:</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1"></a><span class="im">import</span> math</span>
+<span id="cb59-2"><a href="#cb59-2"></a></span>
+<span id="cb59-3"><a href="#cb59-3"></a>str_qualquer <span class="op">=</span> <span class="st">"</span><span class="ch">\t</span><span class="st">Lero lero, ...</span><span class="ch">\n</span><span class="st">"</span></span>
+<span id="cb59-4"><a href="#cb59-4"></a><span class="bu">print</span>(str_qualquer <span class="op">*</span> math.ceil(<span class="bu">len</span>(str_qualquer)<span class="op">/</span><span class="dv">2</span>))</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Lero lero, ...
+    Lero lero, ...
+    Lero lero, ...
+    Lero lero, ...
+    Lero lero, ...
+    Lero lero, ...
+    Lero lero, ...
+    Lero lero, ...</code></pre>
+</div>
+</div>
+<p><br></p>
+<p><strong>Observação</strong>: os caracteres <code>\t</code> e <code>\n</code> em uma string referem-se à um único caracter. São caracteres especiais que denotam <strong>tabulação</strong> e <strong>nova linha</strong>, respectivamente.</p>
+</section><section id="composição-de-string" class="slide level2"><h2>Composição de string</h2>
+<p><br></p>
+<p>Poderemos compor strings utilizando alguns marcadores (“placeholders”). São eles:</p>
+<p><br></p>
+<table>
+<thead><tr class="header">
+<th>Marcador</th>
+<th>Tipo</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><code>%d</code></td>
+<td>Números inteiros</td>
+</tr>
+<tr class="even">
+<td><code>%f</code></td>
+<td>Números decimais</td>
+</tr>
+<tr class="odd">
+<td><code>%s</code></td>
+<td>Strings</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><span class="red">Exemplo</span>: Considere as variáveis <code>nome = "Dennis Ritchie"</code>, <code>importancia = "criador da linguagem C"</code>, <code>ano = 2011</code>. Vamos construir a string <code>"Dennis Ritchie, criador da linguagem C", faleceu em 2011."</code>. Para isso, poderemos aproveitar as informações que estão contidas nas variáveis <code>nome</code>, <code>importancia</code> e <code>ano</code>.</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1"></a><span class="co"># nome e importancia são variáveis do tipo str (são strings):</span></span>
+<span id="cb61-2"><a href="#cb61-2"></a>nome <span class="op">=</span> <span class="st">"Dennis Ritchie"</span></span>
+<span id="cb61-3"><a href="#cb61-3"></a>importancia <span class="op">=</span> <span class="st">"criador da linguagem C"</span></span>
+<span id="cb61-4"><a href="#cb61-4"></a></span>
+<span id="cb61-5"><a href="#cb61-5"></a><span class="co"># a variável ano é do tipo int:</span></span>
+<span id="cb61-6"><a href="#cb61-6"></a>ano <span class="op">=</span> <span class="dv">2011</span></span>
+<span id="cb61-7"><a href="#cb61-7"></a></span>
+<span id="cb61-8"><a href="#cb61-8"></a><span class="co"># Montando a string que desejamos:</span></span>
+<span id="cb61-9"><a href="#cb61-9"></a><span class="bu">print</span>(<span class="st">"</span><span class="sc">%s</span><span class="st">, </span><span class="sc">%s</span><span class="st">, faleceu em </span><span class="sc">%d</span><span class="st">."</span> <span class="op">%</span> (nome, importancia, ano))</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Dennis Ritchie, criador da linguagem C, faleceu em 2011.</code></pre>
+</div>
+</div>
+</section><section id="composição-de-string-1" class="slide level2"><h2>Composição de string</h2>
+<p><br></p>
+<p>Podemos também incrementar os operadores <code>%d</code>, <code>%f</code> e <code>%s</code> para flexibilizar um pouco mais a formatação, caso seja necessário, adequando melhor a saída com o uso de operadores de largura de campo.</p>
+<p><br></p>
+<p><span class="red">Exemplo</span>: estude o exemplo que segue:</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1"></a>nome <span class="op">=</span> <span class="st">"Sofia"</span></span>
+<span id="cb63-2"><a href="#cb63-2"></a>idade <span class="op">=</span> <span class="dv">35</span></span>
+<span id="cb63-3"><a href="#cb63-3"></a>altura <span class="op">=</span> <span class="fl">171.5</span></span>
+<span id="cb63-4"><a href="#cb63-4"></a>medida <span class="op">=</span> <span class="st">"cm"</span></span>
+<span id="cb63-5"><a href="#cb63-5"></a></span>
+<span id="cb63-6"><a href="#cb63-6"></a><span class="bu">print</span>(<span class="st">"-&gt;</span><span class="sc">%20s</span><span class="st">, tem </span><span class="sc">%03d</span><span class="st"> anos e </span><span class="sc">%6.2f</span><span class="st"> de altura"</span> <span class="op">%</span> (nome, idade, altura))</span>
+<span id="cb63-7"><a href="#cb63-7"></a></span>
+<span id="cb63-8"><a href="#cb63-8"></a><span class="co"># Note o sinal de '-':</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-&gt;               Sofia, tem 035 anos e 171.50 de altura</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb65-1"><a href="#cb65-1"></a><span class="bu">print</span>(<span class="st">"-&gt;</span><span class="sc">%-20s</span><span class="st">, tem </span><span class="sc">%03d</span><span class="st"> anos e </span><span class="sc">%-10.2f</span><span class="st"> de altura"</span> <span class="op">%</span> (nome, idade, altura))</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-&gt;Sofia               , tem 035 anos e 171.50     de altura</code></pre>
+</div>
+</div>
+</section><section id="composição-de-string-2" class="slide level2"><h2>Composição de string</h2>
+<p><br></p>
+<p>O sinal de negativo no exemplo anterior informa que o elemento deverá ser alinhado à esquerda.</p>
+<p><br></p>
+<p>A notação <code>%numeros</code>, informa qual a quantidade de espaço para os caracteres devem ser reservado para a string. Se uma quantidade inferior for reservada, a linguagem Python irá negligenciar essa informação e imprimirá a string inteira. Tente fazer <code>print("%1s" % ("Pedro Rafael"))</code>.</p>
+<p><br></p>
+<p>A notação <code>%a.bf</code> para números decimais, informa que deverá reservar um espaço de tamanho <code>a</code> para representar o número, e este número será impresso com <code>b</code> casas decimais. A informação <code>a</code> deverá incluir o ponto como parte do número. Por exemplo, rode o código <code>print("%10.2f" % (10))</code>.</p>
+<p><br></p>
+<div class="fragment">
+<p><span class="red">Exemplo</span>: Poderemos preencher a esquerda com 0, caso tenhamos deixado muito espaço para representação de um número.</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1"></a><span class="im">import</span> math</span>
+<span id="cb67-2"><a href="#cb67-2"></a>numero_pi <span class="op">=</span> math.pi</span>
+<span id="cb67-3"><a href="#cb67-3"></a>numero_euler <span class="op">=</span> math.e</span>
+<span id="cb67-4"><a href="#cb67-4"></a></span>
+<span id="cb67-5"><a href="#cb67-5"></a><span class="bu">print</span>(<span class="st">"O número de Euler é </span><span class="sc">%4.2f</span><span class="ch">\n</span><span class="st">O número Pi é </span><span class="sc">%4.2f</span><span class="st">"</span> <span class="op">%</span> (numero_euler, numero_pi))</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>O número de Euler é 2.72
+O número Pi é 3.14</code></pre>
+</div>
+</div>
+</div>
+</section><section id="composição-de-string-3" class="slide level2"><h2>Composição de string</h2>
+<p><br></p>
+<p>Uma forma mais moderna de compor strings é usando o método <code><a href="https://rdrr.io/r/base/format.html">format()</a></code>. Considere o próximo exemplo.</p>
+<p><br></p>
+<p><span class="red">Exemplo</span>: considere o exemplo abaixo, onde utilizamos o método <code><a href="https://rdrr.io/r/base/format.html">format()</a></code>. Note que a linguagem Python é zero of set, ou seja, é “zero-based”, o que significa que a indexação começa por 0.</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1"></a>nome <span class="op">=</span> <span class="st">"Maria"</span></span>
+<span id="cb69-2"><a href="#cb69-2"></a>idade <span class="op">=</span> <span class="dv">23</span></span>
+<span id="cb69-3"><a href="#cb69-3"></a></span>
+<span id="cb69-4"><a href="#cb69-4"></a><span class="co"># Usando o método format:</span></span>
+<span id="cb69-5"><a href="#cb69-5"></a><span class="bu">print</span>(<span class="st">"Meu nome é </span><span class="sc">{}</span><span class="st"> e tenho </span><span class="sc">{}</span><span class="st">"</span>.<span class="bu">format</span>(nome, idade))</span>
+<span id="cb69-6"><a href="#cb69-6"></a></span>
+<span id="cb69-7"><a href="#cb69-7"></a><span class="co"># Podemos passar as posições entre as chaves:</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Meu nome é Maria e tenho 23</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1"></a><span class="bu">print</span>(<span class="st">"Tenho </span><span class="sc">{1}</span><span class="st"> e me chamo </span><span class="sc">{0}</span><span class="st">"</span>.<span class="bu">format</span>(nome, idade))</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Tenho 23 e me chamo Maria</code></pre>
+</div>
+</div>
+</section><section id="formatação-de-alinhamento" class="slide level2"><h2>Formatação de alinhamento</h2>
+<p><br></p>
+<p>Utilizando o método format, também poderemos especificar “configurar” a máscara para impressão dos dados, isto é, poderemos manipular a <span class="orange">largura de campo</span>. Também podemos utilizar <span class="red">formatação de alinhamento</span> no método <code><a href="https://rdrr.io/r/base/format.html">format()</a></code>. São elas:</p>
+<p><br></p>
+<table>
+<colgroup>
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 61%">
+</colgroup>
+<thead><tr class="header">
+<th>Formatação</th>
+<th>Exemplo</th>
+<th>Descrição</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><code>{:&lt;}</code></td>
+<td><code>"{:&lt;10}"</code></td>
+<td>Alinha à esquerda e ocupa no mínimo 10 caracteres</td>
+</tr>
+<tr class="even">
+<td><code>{:&gt;}</code></td>
+<td><code>"{:&gt;10}"</code></td>
+<td>Alinha à direita e ocupa no mínimo 10 caracteres</td>
+</tr>
+<tr class="odd">
+<td><code>{:^}</code></td>
+<td><code>"{:^10}"</code></td>
+<td>Centraliza e ocupa no mínimo 10 caracteres</td>
+</tr>
+<tr class="even">
+<td><code>{:=^10}</code></td>
+<td><code>"{:=^10}"</code></td>
+<td>Centraliza e ocupa no mínimo 10 caracteres, justificando para o sinal</td>
+</tr>
+<tr class="odd">
+<td><code>{:0=3d}</code></td>
+<td><code>"{:0=3d}"</code></td>
+<td>Alinha à direita, preenche com zeros e ocupa no mínimo 3 caracteres</td>
+</tr>
+<tr class="even">
+<td><code>{:x&lt;4}</code></td>
+<td><code>"{:x&lt;4}"</code></td>
+<td>Alinha à esquerda e preenche com “x” e ocupa no mínimo 4 caracteres</td>
+</tr>
+<tr class="odd">
+<td><code>{:b&gt;5}</code></td>
+<td><code>"{:b&gt;5}"</code></td>
+<td>Alinha à direita e preenche com “b” e ocupa no mínimo 5 caracteres</td>
+</tr>
+</tbody>
+</table></section><section id="formatação-de-alinhamento-1" class="slide level2"><h2>Formatação de alinhamento</h2>
+<p><br></p>
+<p><span class="red">Exemplo</span>: considere o exemplo que segue. Olhe com cuidado cada uma das formatações. Entender bem elas ajudará você organizar a saída das suas funções.</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb73-1"><a href="#cb73-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="sc">{:&lt;10}</span><span class="st">"</span>.<span class="bu">format</span>(<span class="st">"left"</span>))     <span class="co"># "left     "</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>left      </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="sc">{:&gt;10}</span><span class="st">"</span>.<span class="bu">format</span>(<span class="st">"right"</span>))    <span class="co"># "     right"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     right</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="sc">{:^10}</span><span class="st">"</span>.<span class="bu">format</span>(<span class="st">"center"</span>))   <span class="co"># "  center  "</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  center  </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="sc">{:=^10}</span><span class="st">"</span>.<span class="bu">format</span>(<span class="st">"center"</span>))  <span class="co"># "==center=="</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>==center==</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb81-1"><a href="#cb81-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="sc">{:0=3d}</span><span class="st">"</span>.<span class="bu">format</span>(<span class="dv">5</span>))         <span class="co"># "005"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>005</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb83-1"><a href="#cb83-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="sc">{:x&lt;4}</span><span class="st">"</span>.<span class="bu">format</span>(<span class="st">"a"</span>))        <span class="co"># "axxx"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>axxx</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb85-1"><a href="#cb85-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="sc">{:b&gt;5}</span><span class="st">"</span>.<span class="bu">format</span>(<span class="dv">2</span>))          <span class="co"># "bbb10"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>bbbb2</code></pre>
+</div>
+</div>
+</section><section id="formatação-de-alinhamento-2" class="slide level2"><h2>Formatação de alinhamento</h2>
+<p><br></p>
+<p><span class="red">Exercício</span>: Considere os objetos <code>nome</code>, <code>idade</code> e <code>salario</code>, conforme abaixo:</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb87-1"><a href="#cb87-1"></a>nome <span class="op">=</span> <span class="st">"João da Silva"</span></span>
+<span id="cb87-2"><a href="#cb87-2"></a>idade <span class="op">=</span> <span class="dv">38</span></span>
+<span id="cb87-3"><a href="#cb87-3"></a>salario <span class="op">=</span> <span class="fl">12500.37</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<p>Monte uma f-string <code>s</code>, tal que <code>print(s)</code> retorne:</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Nome: [João da Silva+++++++], Idade: [0038], Salário: [***12500.370***]</code></pre>
+</div>
+</div>
+</section><section id="formatação-de-alinhamento-3" class="slide level2"><h2>Formatação de alinhamento</h2>
+<p><br></p>
+<p><span class="red">Exercício</span>: Considere o código que segue:</p>
+<p><br></p>
+<div class="sourceCode" id="cb89"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1"></a>nome <span class="op">=</span> <span class="st">"Sofia"</span></span>
+<span id="cb89-2"><a href="#cb89-2"></a>idade <span class="op">=</span> <span class="dv">35</span></span>
+<span id="cb89-3"><a href="#cb89-3"></a>altura <span class="op">=</span> <span class="fl">171.5</span></span>
+<span id="cb89-4"><a href="#cb89-4"></a>medida <span class="op">=</span> <span class="st">"cm"</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<p>Utilizando o método <code><a href="https://rdrr.io/r/base/format.html">format()</a></code>, os operadores de alinhamento e um único <code><a href="https://rdrr.io/r/base/print.html">print()</a></code>, implemente um código que forneça a saída que segue:</p>
+<p><br></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Nome = Sofia.............................................
+Idade = ____35____
+Altura = .....171.50cm</code></pre>
+</div>
+</div>
+</section><section id="formatação-de-alinhamento-4" class="slide level2"><h2>Formatação de alinhamento</h2>
+<p><br><br></p>
+<p><span class="red">Solução</span>:</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb91-1"><a href="#cb91-1"></a>nome <span class="op">=</span> <span class="st">"Sofia"</span></span>
+<span id="cb91-2"><a href="#cb91-2"></a>idade <span class="op">=</span> <span class="dv">35</span></span>
+<span id="cb91-3"><a href="#cb91-3"></a>altura <span class="op">=</span> <span class="fl">171.5</span></span>
+<span id="cb91-4"><a href="#cb91-4"></a>medida <span class="op">=</span> <span class="st">"cm"</span></span>
+<span id="cb91-5"><a href="#cb91-5"></a></span>
+<span id="cb91-6"><a href="#cb91-6"></a><span class="bu">print</span>(<span class="st">"Nome = </span><span class="sc">{0:.&lt;50}</span><span class="ch">\n</span><span class="st">Idade = </span><span class="sc">{1:_^10}</span><span class="ch">\n</span><span class="st">Altura = </span><span class="sc">{2:.=11.2f}{3}</span><span class="st">"</span>.<span class="bu">format</span>(nome, idade, altura, medida))</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Nome = Sofia.............................................
+Idade = ____35____
+Altura = .....171.50cm</code></pre>
+</div>
+</div>
 <!-- ## Utilizando f-strings -->
 <!-- <br> -->
 <!-- A partir da versão 3.6 de Python, uma nova forma bastante conveniente -->

@@ -1971,337 +1971,337 @@ print(num_real)
 print(valor_logico)
 ```
 
-<!-- ## Conversões de tipos de dados {background-image="imgs/rawpixel/image-from-rawpixel-id-5945709-menor.jpg" background-position="right" background-size="contain"} -->
+## Conversões de tipos de dados {background-image="imgs/rawpixel/image-from-rawpixel-id-5945709-menor.jpg" background-position="right" background-size="contain"}
 
-<!-- <br> -->
+<br>
 
-<!-- ::: columns -->
-<!-- ::: {.column width="60%"} -->
-<!-- Se você é novo em programação, o que pode parecer mais estranho no -->
-<!-- exemplo anterior é que o número 65 foi convertido para o caracter `"A"` -->
-<!-- e para o valor `True`, ao utilizarmos as funções de conversão de tipos -->
-<!-- `chr` e `bool`, respectivamente. -->
+::: columns
+::: {.column width="60%"}
+Se você é novo em programação, o que pode parecer mais estranho no
+exemplo anterior é que o número 65 foi convertido para o caracter `"A"`
+e para o valor `True`, ao utilizarmos as funções de conversão de tipos
+`chr` e `bool`, respectivamente.
 
-<!-- <br> -->
+<br>
 
-<!-- Em Python, assim como ocorre em diversas outras linguagens, qualquer -->
-<!-- número diferente de zero é convertido para `True` ao utilizar a -->
-<!-- conversão para o tipo booleano, sendo `False` a conversão do número -->
-<!-- zero. -->
+Em Python, assim como ocorre em diversas outras linguagens, qualquer
+número diferente de zero é convertido para `True` ao utilizar a
+conversão para o tipo booleano, sendo `False` a conversão do número
+zero.
 
-<!-- <br> -->
+<br>
 
-<!-- <br> Já a conversão do número 65 para o caracter `"A"` se deve a íntima -->
-<!-- relação entre números interios de 0 a 255 para caracteres da [Tabela -->
-<!-- ASCII](http://www.redimovel.com.br/ceal/so/tabela-ascii.htm). Por -->
-<!-- exemplo, `print(chr(64))` a string composta pelo character `@`. -->
-<!-- ::: -->
+<br> Já a conversão do número 65 para o caracter `"A"` se deve a íntima
+relação entre números interios de 0 a 255 para caracteres da [Tabela
+ASCII](http://www.redimovel.com.br/ceal/so/tabela-ascii.htm). Por
+exemplo, `print(chr(64))` a string composta pelo character `@`.
+:::
 
-<!-- ::: {.column width="40%"} -->
-<!-- ::: -->
-<!-- ::: -->
+::: {.column width="40%"}
+:::
+:::
 
-<!-- ## Operação com strings -->
+## Operação com strings
 
-<!-- <br> -->
+<br>
 
-<!-- Em Python, é possível realizar operações em variáveis do tipo strings. -->
-<!-- Strings são cadeias de caracteres, como por exemplo, -->
-<!-- `print("Olá, bem vindo ao curso"`) a frase entre aspas que é passada -->
-<!-- como argumento para a função `print()`. -->
+Em Python, é possível realizar operações em variáveis do tipo strings.
+Strings são cadeias de caracteres, como por exemplo,
+`print("Olá, bem vindo ao curso"`) a frase entre aspas que é passada
+como argumento para a função `print()`.
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red} (contatenação): concatenando duas ou mais strings: -->
+[Exemplo]{.red} (contatenação): concatenando duas ou mais strings:
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- nome = "Joãozinho" -->
-<!-- str_1 = "Eu, " -->
-<!-- str_2 = nome -->
-<!-- str_3 = ", serei um grande programador" -->
-<!-- str_4 = " de Python!" -->
+```{python}
+nome = "Joãozinho"
+str_1 = "Eu, "
+str_2 = nome
+str_3 = ", serei um grande programador"
+str_4 = " de Python!"
 
-<!-- # Concatenando as strings com o operador + -->
-<!-- print(str_1 + str_2 + str_3 + str_4) -->
-<!-- ``` -->
+# Concatenando as strings com o operador +
+print(str_1 + str_2 + str_3 + str_4)
+```
 
-<!-- ## Operação com strings -->
+## Operação com strings
 
-<!-- <br> -->
+<br>
 
-<!-- Você também poderá utilizar o operador de multiplicação `*` para repetir -->
-<!-- uma string. Também é possível obter a quantidade de caracteres de uma -->
-<!-- dada string, utilizando a função `len()` ou o método Dunder ( -->
-<!-- `__len__()`) encapsulado em um objeto do tipo `str`. -->
+Você também poderá utilizar o operador de multiplicação `*` para repetir
+uma string. Também é possível obter a quantidade de caracteres de uma
+dada string, utilizando a função `len()` ou o método Dunder (
+`__len__()`) encapsulado em um objeto do tipo `str`.
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: repetindo, uma string qualquer, em um total igual à -->
-<!-- metade do comprimento da string arredondado para cima: -->
+[Exemplo]{.red}: repetindo, uma string qualquer, em um total igual à
+metade do comprimento da string arredondado para cima:
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- import math -->
+```{python}
+import math
 
-<!-- str_qualquer = "\tLero lero, ...\n" -->
-<!-- print(str_qualquer * math.ceil(len(str_qualquer)/2)) -->
-<!-- ``` -->
+str_qualquer = "\tLero lero, ...\n"
+print(str_qualquer * math.ceil(len(str_qualquer)/2))
+```
 
-<!-- <br> -->
+<br>
 
-<!-- **Observação**: os caracteres `\t` e `\n` em uma string referem-se à um -->
-<!-- único caracter. São caracteres especiais que denotam **tabulação** e -->
-<!-- **nova linha**, respectivamente. -->
+**Observação**: os caracteres `\t` e `\n` em uma string referem-se à um
+único caracter. São caracteres especiais que denotam **tabulação** e
+**nova linha**, respectivamente.
 
-<!-- ## Composição de string -->
+## Composição de string
 
-<!-- <br> -->
+<br>
 
-<!-- Poderemos compor strings utilizando alguns marcadores ("placeholders"). -->
-<!-- São eles: -->
+Poderemos compor strings utilizando alguns marcadores ("placeholders").
+São eles:
 
-<!-- <br> -->
+<br>
 
-<!-- | Marcador | Tipo             | -->
-<!-- |----------|------------------| -->
-<!-- | `%d`     | Números inteiros | -->
-<!-- | `%f`     | Números decimais | -->
-<!-- | `%s`     | Strings          | -->
+| Marcador | Tipo             |
+|----------|------------------|
+| `%d`     | Números inteiros |
+| `%f`     | Números decimais |
+| `%s`     | Strings          |
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: Considere as variáveis `nome = "Dennis Ritchie"`, -->
-<!-- `importancia = "criador da linguagem C"`, `ano = 2011`. Vamos construir -->
-<!-- a string `"Dennis Ritchie, criador da linguagem C", faleceu em 2011."`. -->
-<!-- Para isso, poderemos aproveitar as informações que estão contidas nas -->
-<!-- variáveis `nome`, `importancia` e `ano`. -->
+[Exemplo]{.red}: Considere as variáveis `nome = "Dennis Ritchie"`,
+`importancia = "criador da linguagem C"`, `ano = 2011`. Vamos construir
+a string `"Dennis Ritchie, criador da linguagem C", faleceu em 2011."`.
+Para isso, poderemos aproveitar as informações que estão contidas nas
+variáveis `nome`, `importancia` e `ano`.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- # nome e importancia são variáveis do tipo str (são strings): -->
-<!-- nome = "Dennis Ritchie" -->
-<!-- importancia = "criador da linguagem C" -->
+```{python}
+# nome e importancia são variáveis do tipo str (são strings):
+nome = "Dennis Ritchie"
+importancia = "criador da linguagem C"
 
-<!-- # a variável ano é do tipo int: -->
-<!-- ano = 2011 -->
+# a variável ano é do tipo int:
+ano = 2011
 
-<!-- # Montando a string que desejamos: -->
-<!-- print("%s, %s, faleceu em %d." % (nome, importancia, ano)) -->
-<!-- ``` -->
+# Montando a string que desejamos:
+print("%s, %s, faleceu em %d." % (nome, importancia, ano))
+```
 
-<!-- ## Composição de string -->
+## Composição de string
 
-<!-- <br> -->
+<br>
 
-<!-- Podemos também incrementar os operadores `%d`, `%f` e `%s` para -->
-<!-- flexibilizar um pouco mais a formatação, caso seja necessário, adequando -->
-<!-- melhor a saída com o uso de operadores de largura de campo. -->
+Podemos também incrementar os operadores `%d`, `%f` e `%s` para
+flexibilizar um pouco mais a formatação, caso seja necessário, adequando
+melhor a saída com o uso de operadores de largura de campo.
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: estude o exemplo que segue: -->
+[Exemplo]{.red}: estude o exemplo que segue:
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- nome = "Sofia" -->
-<!-- idade = 35 -->
-<!-- altura = 171.5 -->
-<!-- medida = "cm" -->
+```{python}
+nome = "Sofia"
+idade = 35
+altura = 171.5
+medida = "cm"
 
-<!-- print("->%20s, tem %03d anos e %6.2f de altura" % (nome, idade, altura)) -->
+print("->%20s, tem %03d anos e %6.2f de altura" % (nome, idade, altura))
 
-<!-- # Note o sinal de '-': -->
-<!-- print("->%-20s, tem %03d anos e %-10.2f de altura" % (nome, idade, altura)) -->
-<!-- ``` -->
+# Note o sinal de '-':
+print("->%-20s, tem %03d anos e %-10.2f de altura" % (nome, idade, altura))
+```
 
-<!-- ## Composição de string -->
+## Composição de string
 
-<!-- <br> -->
+<br>
 
-<!-- O sinal de negativo no exemplo anterior informa que o elemento deverá -->
-<!-- ser alinhado à esquerda. -->
+O sinal de negativo no exemplo anterior informa que o elemento deverá
+ser alinhado à esquerda.
 
-<!-- <br> -->
+<br>
 
-<!-- A notação `%numeros`, informa qual a quantidade de espaço para os -->
-<!-- caracteres devem ser reservado para a string. Se uma quantidade inferior -->
-<!-- for reservada, a linguagem Python irá negligenciar essa informação e -->
-<!-- imprimirá a string inteira. Tente fazer -->
-<!-- `print("%1s" % ("Pedro Rafael"))`. -->
+A notação `%numeros`, informa qual a quantidade de espaço para os
+caracteres devem ser reservado para a string. Se uma quantidade inferior
+for reservada, a linguagem Python irá negligenciar essa informação e
+imprimirá a string inteira. Tente fazer
+`print("%1s" % ("Pedro Rafael"))`.
 
-<!-- <br> -->
+<br>
 
-<!-- A notação `%a.bf` para números decimais, informa que deverá reservar um -->
-<!-- espaço de tamanho `a` para representar o número, e este número será -->
-<!-- impresso com `b` casas decimais. A informação `a` deverá incluir o ponto -->
-<!-- como parte do número. Por exemplo, rode o código -->
-<!-- `print("%10.2f" % (10))`. -->
+A notação `%a.bf` para números decimais, informa que deverá reservar um
+espaço de tamanho `a` para representar o número, e este número será
+impresso com `b` casas decimais. A informação `a` deverá incluir o ponto
+como parte do número. Por exemplo, rode o código
+`print("%10.2f" % (10))`.
 
-<!-- <br> -->
+<br>
 
-<!-- ::: fragment -->
-<!-- [Exemplo]{.red}: Poderemos preencher a esquerda com 0, caso tenhamos -->
-<!-- deixado muito espaço para representação de um número. -->
+::: fragment
+[Exemplo]{.red}: Poderemos preencher a esquerda com 0, caso tenhamos
+deixado muito espaço para representação de um número.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- import math -->
-<!-- numero_pi = math.pi -->
-<!-- numero_euler = math.e -->
+```{python}
+import math
+numero_pi = math.pi
+numero_euler = math.e
 
-<!-- print("O número de Euler é %4.2f\nO número Pi é %4.2f" % (numero_euler, numero_pi)) -->
-<!-- ``` -->
-<!-- ::: -->
+print("O número de Euler é %4.2f\nO número Pi é %4.2f" % (numero_euler, numero_pi))
+```
+:::
 
-<!-- ## Composição de string -->
+## Composição de string
 
-<!-- <br> -->
+<br>
 
-<!-- Uma forma mais moderna de compor strings é usando o método `format()`. -->
-<!-- Considere o próximo exemplo. -->
+Uma forma mais moderna de compor strings é usando o método `format()`.
+Considere o próximo exemplo.
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: considere o exemplo abaixo, onde utilizamos o método -->
-<!-- `format()`. Note que a linguagem Python é zero of set, ou seja, é -->
-<!-- "zero-based", o que significa que a indexação começa por 0. -->
+[Exemplo]{.red}: considere o exemplo abaixo, onde utilizamos o método
+`format()`. Note que a linguagem Python é zero of set, ou seja, é
+"zero-based", o que significa que a indexação começa por 0.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- nome = "Maria" -->
-<!-- idade = 23 -->
+```{python}
+nome = "Maria"
+idade = 23
 
-<!-- # Usando o método format: -->
-<!-- print("Meu nome é {} e tenho {}".format(nome, idade)) -->
+# Usando o método format:
+print("Meu nome é {} e tenho {}".format(nome, idade))
 
-<!-- # Podemos passar as posições entre as chaves: -->
-<!-- print("Tenho {1} e me chamo {0}".format(nome, idade)) -->
-<!-- ``` -->
+# Podemos passar as posições entre as chaves:
+print("Tenho {1} e me chamo {0}".format(nome, idade))
+```
 
-<!-- ## Formatação de alinhamento -->
+## Formatação de alinhamento
 
-<!-- <br> -->
+<br>
 
-<!-- Utilizando o método format, também poderemos especificar "configurar" a -->
-<!-- máscara para impressão dos dados, isto é, poderemos manipular a [largura -->
-<!-- de campo]{.orange}. Também podemos utilizar [formatação de -->
-<!-- alinhamento]{.red} no método `format()`. São elas: -->
+Utilizando o método format, também poderemos especificar "configurar" a
+máscara para impressão dos dados, isto é, poderemos manipular a [largura
+de campo]{.orange}. Também podemos utilizar [formatação de
+alinhamento]{.red} no método `format()`. São elas:
 
-<!-- <br> -->
+<br>
 
-<!-- | Formatação | Exemplo     | Descrição                                                             | -->
-<!-- |--------------|--------------|---------------------------------------------| -->
-<!-- | `{:<}`     | `"{:<10}"`  | Alinha à esquerda e ocupa no mínimo 10 caracteres                     | -->
-<!-- | `{:>}`     | `"{:>10}"`  | Alinha à direita e ocupa no mínimo 10 caracteres                      | -->
-<!-- | `{:^}`     | `"{:^10}"`  | Centraliza e ocupa no mínimo 10 caracteres                            | -->
-<!-- | `{:=^10}`  | `"{:=^10}"` | Centraliza e ocupa no mínimo 10 caracteres, justificando para o sinal | -->
-<!-- | `{:0=3d}`  | `"{:0=3d}"` | Alinha à direita, preenche com zeros e ocupa no mínimo 3 caracteres   | -->
-<!-- | `{:x<4}`   | `"{:x<4}"`  | Alinha à esquerda e preenche com "x" e ocupa no mínimo 4 caracteres   | -->
-<!-- | `{:b>5}`   | `"{:b>5}"`  | Alinha à direita e preenche com "b" e ocupa no mínimo 5 caracteres    | -->
+| Formatação | Exemplo     | Descrição                                                             |
+|--------------|--------------|---------------------------------------------|
+| `{:<}`     | `"{:<10}"`  | Alinha à esquerda e ocupa no mínimo 10 caracteres                     |
+| `{:>}`     | `"{:>10}"`  | Alinha à direita e ocupa no mínimo 10 caracteres                      |
+| `{:^}`     | `"{:^10}"`  | Centraliza e ocupa no mínimo 10 caracteres                            |
+| `{:=^10}`  | `"{:=^10}"` | Centraliza e ocupa no mínimo 10 caracteres, justificando para o sinal |
+| `{:0=3d}`  | `"{:0=3d}"` | Alinha à direita, preenche com zeros e ocupa no mínimo 3 caracteres   |
+| `{:x<4}`   | `"{:x<4}"`  | Alinha à esquerda e preenche com "x" e ocupa no mínimo 4 caracteres   |
+| `{:b>5}`   | `"{:b>5}"`  | Alinha à direita e preenche com "b" e ocupa no mínimo 5 caracteres    |
 
-<!-- ## Formatação de alinhamento -->
+## Formatação de alinhamento
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: considere o exemplo que segue. Olhe com cuidado cada -->
-<!-- uma das formatações. Entender bem elas ajudará você organizar a saída -->
-<!-- das suas funções. -->
+[Exemplo]{.red}: considere o exemplo que segue. Olhe com cuidado cada
+uma das formatações. Entender bem elas ajudará você organizar a saída
+das suas funções.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- print("{:<10}".format("left"))     # "left     " -->
-<!-- print("{:>10}".format("right"))    # "     right" -->
-<!-- print("{:^10}".format("center"))   # "  center  " -->
-<!-- print("{:=^10}".format("center"))  # "==center==" -->
-<!-- print("{:0=3d}".format(5))         # "005" -->
-<!-- print("{:x<4}".format("a"))        # "axxx" -->
-<!-- print("{:b>5}".format(2))          # "bbb10" -->
-<!-- ``` -->
+```{python}
+print("{:<10}".format("left"))     # "left     "
+print("{:>10}".format("right"))    # "     right"
+print("{:^10}".format("center"))   # "  center  "
+print("{:=^10}".format("center"))  # "==center=="
+print("{:0=3d}".format(5))         # "005"
+print("{:x<4}".format("a"))        # "axxx"
+print("{:b>5}".format(2))          # "bbb10"
+```
 
-<!-- ## Formatação de alinhamento -->
+## Formatação de alinhamento
 
-<!-- <br> -->
+<br>
 
-<!-- [Exercício]{.red}: Considere os objetos `nome`, `idade` e `salario`, -->
-<!-- conforme abaixo: -->
+[Exercício]{.red}: Considere os objetos `nome`, `idade` e `salario`,
+conforme abaixo:
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- nome = "João da Silva" -->
-<!-- idade = 38 -->
-<!-- salario = 12500.37 -->
-<!-- ``` -->
+```{python}
+nome = "João da Silva"
+idade = 38
+salario = 12500.37
+```
 
-<!-- <br> -->
+<br>
 
-<!-- Monte uma f-string `s`, tal que `print(s)` retorne: -->
+Monte uma f-string `s`, tal que `print(s)` retorne:
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| echo: false -->
-<!-- #| include: true -->
-<!-- s = f"Nome: [{nome:+<20}], Idade: [{idade:0>4}], Salário: [{salario:*^15.3f}]" -->
-<!-- print(s) -->
-<!-- ``` -->
+```{python}
+#| echo: false
+#| include: true
+s = f"Nome: [{nome:+<20}], Idade: [{idade:0>4}], Salário: [{salario:*^15.3f}]"
+print(s)
+```
 
-<!-- ## Formatação de alinhamento -->
+## Formatação de alinhamento
 
-<!-- <br> -->
+<br>
 
-<!-- [Exercício]{.red}: Considere o código que segue: -->
+[Exercício]{.red}: Considere o código que segue:
 
-<!-- <br> -->
+<br>
 
-<!-- ``` python -->
-<!-- nome = "Sofia" -->
-<!-- idade = 35 -->
-<!-- altura = 171.5 -->
-<!-- medida = "cm" -->
-<!-- ``` -->
+``` python
+nome = "Sofia"
+idade = 35
+altura = 171.5
+medida = "cm"
+```
 
-<!-- <br> -->
+<br>
 
-<!-- Utilizando o método `format()`, os operadores de alinhamento e um único -->
-<!-- `print()`, implemente um código que forneça a saída que segue: -->
+Utilizando o método `format()`, os operadores de alinhamento e um único
+`print()`, implemente um código que forneça a saída que segue:
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| echo: false -->
-<!-- nome = "Sofia" -->
-<!-- idade = 35 -->
-<!-- altura = 171.5 -->
-<!-- medida = "cm" -->
+```{python}
+#| echo: false
+nome = "Sofia"
+idade = 35
+altura = 171.5
+medida = "cm"
 
-<!-- print("Nome = {0:.<50}\nIdade = {1:_^10}\nAltura = {2:.=11.2f}{3}".format(nome, idade, altura, medida)) -->
-<!-- ``` -->
+print("Nome = {0:.<50}\nIdade = {1:_^10}\nAltura = {2:.=11.2f}{3}".format(nome, idade, altura, medida))
+```
 
-<!-- ## Formatação de alinhamento -->
+## Formatação de alinhamento
 
-<!-- <br> <br> -->
+<br> <br>
 
-<!-- [Solução]{.red}: -->
+[Solução]{.red}:
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- nome = "Sofia" -->
-<!-- idade = 35 -->
-<!-- altura = 171.5 -->
-<!-- medida = "cm" -->
+```{python}
+nome = "Sofia"
+idade = 35
+altura = 171.5
+medida = "cm"
 
-<!-- print("Nome = {0:.<50}\nIdade = {1:_^10}\nAltura = {2:.=11.2f}{3}".format(nome, idade, altura, medida)) -->
-<!-- ``` -->
+print("Nome = {0:.<50}\nIdade = {1:_^10}\nAltura = {2:.=11.2f}{3}".format(nome, idade, altura, medida))
+```
 
 <!-- ## Utilizando f-strings -->
 
