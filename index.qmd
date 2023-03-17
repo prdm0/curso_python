@@ -2303,382 +2303,382 @@ medida = "cm"
 print("Nome = {0:.<50}\nIdade = {1:_^10}\nAltura = {2:.=11.2f}{3}".format(nome, idade, altura, medida))
 ```
 
-<!-- ## Utilizando f-strings -->
+## Utilizando f-strings
 
-<!-- <br> -->
+<br>
 
-<!-- A partir da versão 3.6 de Python, uma nova forma bastante conveniente -->
-<!-- surgiu para realizar composição de strings, são as chamadas -->
-<!-- [f-strings]{.red}. Chama-se assim pois usamos notação `f""`. <br> -->
+A partir da versão 3.6 de Python, uma nova forma bastante conveniente
+surgiu para realizar composição de strings, são as chamadas
+[f-strings]{.red}. Chama-se assim pois usamos notação `f""`. <br>
 
-<!-- <br> -->
+<br>
 
-<!-- **Diferenças e semelhaças para o uso do** `format()`: -->
+**Diferenças e semelhaças para o uso do** `format()`:
 
-<!-- 1.  [Diferença]{.orange}: Você deverá passar os nomes das variáveis em -->
-<!--     `{}`; -->
-<!-- 2.  [Semelhanças]{.orange}: as regras de formatação após os `:` são -->
-<!--     indênticas às descritas para o método `format()`. -->
+1.  [Diferença]{.orange}: Você deverá passar os nomes das variáveis em
+    `{}`;
+2.  [Semelhanças]{.orange}: as regras de formatação após os `:` são
+    indênticas às descritas para o método `format()`.
 
-<!-- ::: fragment -->
-<!-- [Exemplo]{.red}: utilizando f-string com operações de alinhamento. -->
+::: fragment
+[Exemplo]{.red}: utilizando f-string com operações de alinhamento.
 
-<!-- ```{python} -->
-<!-- nome = "Pedro Rafael" -->
-<!-- altura = 171.5 -->
-<!-- unidade = "cm" -->
-<!-- idade = 35 -->
-<!-- print(f"Nome: {nome:.<20}\nAltura: {altura:.^8.2f}{unidade}\nIdade: {idade:0=3d}") -->
-<!-- ``` -->
-<!-- ::: -->
+```{python}
+nome = "Pedro Rafael"
+altura = 171.5
+unidade = "cm"
+idade = 35
+print(f"Nome: {nome:.<20}\nAltura: {altura:.^8.2f}{unidade}\nIdade: {idade:0=3d}")
+```
+:::
 
-<!-- ## Fatiando strings -->
+## Fatiando strings
 
-<!-- <br> -->
+<br>
 
-<!-- Em Python, assim como poderemos fazer em outas estruturas de dados que -->
-<!-- veremos, uma string é um iterador, isto é, é um objeto ao qual poderemos -->
-<!-- percorrer. -->
+Em Python, assim como poderemos fazer em outas estruturas de dados que
+veremos, uma string é um iterador, isto é, é um objeto ao qual poderemos
+percorrer.
 
-<!-- <br> -->
+<br>
 
-<!-- **Se podemos percober, então isso implica que poderemos acessar -->
-<!-- subelementos.** -->
+**Se podemos percober, então isso implica que poderemos acessar
+subelementos.**
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: Acessando substrings de uma string principal. -->
+[Exemplo]{.red}: Acessando substrings de uma string principal.
 
-<!-- ```{python} -->
-<!-- s = "Bem vindo ao curso de Python pessoal" -->
+```{python}
+s = "Bem vindo ao curso de Python pessoal"
 
-<!-- print(s[0]) -->
-<!-- print(s[len(s) - 1]) -->
-<!-- print(s[:5]) -->
-<!-- print(s[-3:-1]) -->
-<!-- print(s[:]) -->
-<!-- print(s[:-8]) -->
-<!-- ``` -->
+print(s[0])
+print(s[len(s) - 1])
+print(s[:5])
+print(s[-3:-1])
+print(s[:])
+print(s[:-8])
+```
 
-<!-- ## Fatiando strings {background-image="imgs/rawpixel/image-from-rawpixel-id-8693208-jpeg.jpg" background-size="contain" background-position="right"} -->
+## Fatiando strings {background-image="imgs/rawpixel/image-from-rawpixel-id-8693208-jpeg.jpg" background-size="contain" background-position="right"}
 
-<!-- ::: columns -->
-<!-- ::: {.column width="60%"} -->
-<!-- <br> -->
+::: columns
+::: {.column width="60%"}
+<br>
 
-<!-- [Algumas observações]{.red} -->
+[Algumas observações]{.red}
 
-<!-- <br> -->
+<br>
 
-<!-- Python é **zero-based**, i.e., o seu sistema de indexão começa em zero -->
+Python é **zero-based**, i.e., o seu sistema de indexão começa em zero
 
-<!-- <br> -->
+<br>
 
-<!-- No que indexão de trás para frente são realizadas utilizando valores -->
-<!-- negativos e o último elemento é o elemento -1, uma vez que 0 = -0, e -->
-<!-- portanto não faria sentido indexar de trás para frete a partir do índice -->
-<!-- -0. -->
+No que indexão de trás para frente são realizadas utilizando valores
+negativos e o último elemento é o elemento -1, uma vez que 0 = -0, e
+portanto não faria sentido indexar de trás para frete a partir do índice
+-0.
 
-<!-- <br> -->
+<br>
 
-<!-- Strings não são estruturas de dados, e sim, tipos de dados! Todavia, é -->
-<!-- possível realizar indexações como vimos. As demais estruturas de dados -->
-<!-- de Python, em que poderemos utilizar índices para acessar seus -->
-<!-- elementos, segue o mesmo esquema de indexação das strings, por exemplo, -->
-<!-- as listas e tuplas. -->
-<!-- ::: -->
+Strings não são estruturas de dados, e sim, tipos de dados! Todavia, é
+possível realizar indexações como vimos. As demais estruturas de dados
+de Python, em que poderemos utilizar índices para acessar seus
+elementos, segue o mesmo esquema de indexação das strings, por exemplo,
+as listas e tuplas.
+:::
 
-<!-- ::: {.column width="40%"} -->
-<!-- ::: -->
-<!-- ::: -->
+::: {.column width="40%"}
+:::
+:::
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- Em Python, listas são um tipo de **estrutura de dados** em que podemos -->
-<!-- armazenar dados, podendo ser de **tipos diferentes**, e podemos -->
-<!-- percorrer pelo índice do elemento na lista. -->
+Em Python, listas são um tipo de **estrutura de dados** em que podemos
+armazenar dados, podendo ser de **tipos diferentes**, e podemos
+percorrer pelo índice do elemento na lista.
 
-<!-- <br> -->
+<br>
 
-<!-- Lembre-se que assim como as strings, as demais estruturas de dados de -->
-<!-- Python **começam sua indexação por zero**. -->
+Lembre-se que assim como as strings, as demais estruturas de dados de
+Python **começam sua indexação por zero**.
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: Note que acessar os índices de trás para crente, a -->
-<!-- indexação começa de $-1$, do mesmo modo que em strings e em arrays do -->
-<!-- Numpy adiante no curso. -->
+[Exemplo]{.red}: Note que acessar os índices de trás para crente, a
+indexação começa de $-1$, do mesmo modo que em strings e em arrays do
+Numpy adiante no curso.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- # Criando uma lista vazia -->
-<!-- l1 = [] -->
-<!-- # Criando uma lista de valores inteiros -->
-<!-- l2 = [1, 6, 8] -->
+```{python}
+# Criando uma lista vazia
+l1 = []
+# Criando uma lista de valores inteiros
+l2 = [1, 6, 8]
 
-<!-- # Acessando o primeiro elemento de l2 -->
-<!-- l2[0] -->
+# Acessando o primeiro elemento de l2
+l2[0]
 
-<!-- # Acessando o último elemento de l2 -->
-<!-- l2[-1] -->
+# Acessando o último elemento de l2
+l2[-1]
 
-<!-- # Acessando os dois últimos elementos -->
-<!-- l2[-2:] -->
+# Acessando os dois últimos elementos
+l2[-2:]
 
-<!-- # Acessando os dois primeiros -->
-<!-- l2[0:2] -->
+# Acessando os dois primeiros
+l2[0:2]
 
-<!-- # Também acessando os dois primeiros -->
-<!-- l2[-3:-1] -->
-<!-- ``` -->
+# Também acessando os dois primeiros
+l2[-3:-1]
+```
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- Também poderemos ter listas aninhadas e o acesso se dá da mesma forma. O -->
-<!-- exemplo que segue explora isso. Leia os comentários. -->
+Também poderemos ter listas aninhadas e o acesso se dá da mesma forma. O
+exemplo que segue explora isso. Leia os comentários.
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: Criando listas aninhadas e acessando seus elementos. -->
+[Exemplo]{.red}: Criando listas aninhadas e acessando seus elementos.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- # Frutas -->
-<!-- frutas = ['laranja', 'uva', 'maçã', 'tomate'] -->
-<!-- quantidade_frutas = [10, 20, 5, 8] -->
+```{python}
+#| results: hold
+# Frutas
+frutas = ['laranja', 'uva', 'maçã', 'tomate']
+quantidade_frutas = [10, 20, 5, 8]
 
-<!-- # Verduras -->
-<!-- verduras = ['cebola', 'alho', 'pimentão'] -->
-<!-- quantidade_verduras = [10, 8, 5] -->
+# Verduras
+verduras = ['cebola', 'alho', 'pimentão']
+quantidade_verduras = [10, 8, 5]
 
-<!-- # Frutas e verduras -->
-<!-- frutas_e_verduras = [[frutas, quantidade_frutas], [verduras, quantidade_verduras]] -->
+# Frutas e verduras
+frutas_e_verduras = [[frutas, quantidade_frutas], [verduras, quantidade_verduras]]
 
-<!-- # Obtendo da lista aninhada frutas_e_verduras, apenas as frutas: -->
-<!-- frutas_e_verduras[0][0] -->
+# Obtendo da lista aninhada frutas_e_verduras, apenas as frutas:
+frutas_e_verduras[0][0]
 
-<!-- # Quais as duas últimas frutas? -->
-<!-- frutas_e_verduras[0][0][len(frutas_e_verduras[0][0])-2:] -->
-<!-- ``` -->
+# Quais as duas últimas frutas?
+frutas_e_verduras[0][0][len(frutas_e_verduras[0][0])-2:]
+```
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- Em linguagens orientadas à objetos, como Python, quase tudo são objetos. -->
-<!-- Objetos geralmente possui métodos associados. Objetos da classe `list` -->
-<!-- fornecem diversos métodos úteis. -->
+Em linguagens orientadas à objetos, como Python, quase tudo são objetos.
+Objetos geralmente possui métodos associados. Objetos da classe `list`
+fornecem diversos métodos úteis.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| output-location: column-fragment -->
-<!-- #| results: hold -->
-<!-- # Criando uma lista -->
-<!-- lista = ["João", "Maria", "José", "Pedro"] -->
+```{python}
+#| output-location: column-fragment
+#| results: hold
+# Criando uma lista
+lista = ["João", "Maria", "José", "Pedro"]
 
-<!-- # Chegando o tipo: -->
-<!-- type(lista) -->
+# Chegando o tipo:
+type(lista)
 
-<!-- # Testando a instância: -->
-<!-- isinstance(lista, list) -->
+# Testando a instância:
+isinstance(lista, list)
 
-<!-- # ou -->
+# ou
 
-<!-- type(lista) == list -->
+type(lista) == list
 
-<!-- # Listando os métodos de um objeto do tipo list -->
-<!-- dir(lista) -->
-<!-- ``` -->
+# Listando os métodos de um objeto do tipo list
+dir(lista)
+```
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- Alguns métoods aparerem com os nomes envolvidos por duplo underscores -->
-<!-- `__`. Esses métodos são chamados de métodos mágicos ou métodos dunder. -->
-<!-- Tais métodos são úteis para permitir flexibilidade na classe. Por -->
-<!-- exemplo, os desenvolvedores da classe list implementaram o método -->
-<!-- `__add__` que permitirá a soma de duas listas. -->
+Alguns métoods aparerem com os nomes envolvidos por duplo underscores
+`__`. Esses métodos são chamados de métodos mágicos ou métodos dunder.
+Tais métodos são úteis para permitir flexibilidade na classe. Por
+exemplo, os desenvolvedores da classe list implementaram o método
+`__add__` que permitirá a soma de duas listas.
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: Note que foi possível chamar o método mágico `__add__` -->
-<!-- de um objeto da classe `list`. Invocar o método mágico diretamente pode -->
-<!-- não ser uma boa prática. A implementação de `__add__` na classe interna -->
-<!-- `list` permite que possamos usar o operador binário `+` para somar -->
-<!-- listas. Note que a soma de listas nesse caso significa concatenar as -->
-<!-- listas. -->
+[Exemplo]{.red}: Note que foi possível chamar o método mágico `__add__`
+de um objeto da classe `list`. Invocar o método mágico diretamente pode
+não ser uma boa prática. A implementação de `__add__` na classe interna
+`list` permite que possamos usar o operador binário `+` para somar
+listas. Note que a soma de listas nesse caso significa concatenar as
+listas.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| results: asis -->
-<!-- #| output-location: column-fragment -->
-<!-- l1 = [1, 2, 7, 8, 10] -->
-<!-- l2 = [12, 20, -1] -->
+```{python}
+#| results: asis
+#| output-location: column-fragment
+l1 = [1, 2, 7, 8, 10]
+l2 = [12, 20, -1]
 
-<!-- # __add__ é um método mágico que se implementado na -->
-<!-- # definição da classe permite que possamos somar -->
-<!-- # duas listas assim: -->
-<!-- l1 + l2 -->
+# __add__ é um método mágico que se implementado na
+# definição da classe permite que possamos somar
+# duas listas assim:
+l1 + l2
 
-<!-- # Ou então assim: -->
-<!-- l1.__add__(l2) -->
-<!-- ``` -->
+# Ou então assim:
+l1.__add__(l2)
+```
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- É aconselhável evitar o uso direto dos métodos mágicos em Python. Os -->
-<!-- métodos mágicos são uma forma de encapsulamento e ocultação de código -->
-<!-- que permite ao programador escrever código mais conciso e limpo. No -->
-<!-- entanto, os métodos mágicos também podem tornar o código mais difícil de -->
-<!-- entender e manter, portanto, é importante usá-los com sabedoria. -->
+É aconselhável evitar o uso direto dos métodos mágicos em Python. Os
+métodos mágicos são uma forma de encapsulamento e ocultação de código
+que permite ao programador escrever código mais conciso e limpo. No
+entanto, os métodos mágicos também podem tornar o código mais difícil de
+entender e manter, portanto, é importante usá-los com sabedoria.
 
-<!-- <br> -->
+<br>
 
-<!-- Usando palavras mais diretas, quando você estiver implementando suas -->
-<!-- próprias classes, você poderá implementar, por exemplo, o método mágico -->
-<!-- `__add__` que permitirá você utilizar operações de soma com seus -->
-<!-- objetos. -->
+Usando palavras mais diretas, quando você estiver implementando suas
+próprias classes, você poderá implementar, por exemplo, o método mágico
+`__add__` que permitirá você utilizar operações de soma com seus
+objetos.
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: Método `__doc__` é usado para retornar docstrings -->
-<!-- (strings de documentação) de métodos e objetos. -->
+[Exemplo]{.red}: Método `__doc__` é usado para retornar docstrings
+(strings de documentação) de métodos e objetos.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- #| output-location: column-fragment -->
-<!-- # Criando uma lista vazia: -->
-<!-- sou_uma_lista = list() -->
+```{python}
+#| results: hold
+#| output-location: column-fragment
+# Criando uma lista vazia:
+sou_uma_lista = list()
 
-<!-- # Outra forma de criar uma lista vazia: -->
-<!-- sou_uma_lista = [] -->
+# Outra forma de criar uma lista vazia:
+sou_uma_lista = []
 
-<!-- # Invocando o método mágico __doc__ -->
-<!-- # Ele retorna uma docstring com informações sobre o objeto -->
-<!-- sou_uma_lista.__doc__ -->
-<!-- ``` -->
+# Invocando o método mágico __doc__
+# Ele retorna uma docstring com informações sobre o objeto
+sou_uma_lista.__doc__
+```
 
-<!-- ## Listas {background-image="imgs/rawpixel/image-from-rawpixel-id-5743490-jpeg.jpg" background-size="contain" background-position="right"} -->
+## Listas {background-image="imgs/rawpixel/image-from-rawpixel-id-5743490-jpeg.jpg" background-size="contain" background-position="right"}
 
-<!-- <br> -->
+<br>
 
-<!-- ::: columns -->
-<!-- ::: {.column width="70%"} -->
-<!-- [Exemplo]{.red}: Perceba que podemos comparar `l1 == l2`, uma vez que -->
-<!-- `__eq__` é um método da classe `list`. Note também que podemos fazer -->
-<!-- `len(l1)` ou `len(l2)` uma vez que existe o método `__len__` -->
-<!-- implementado no interior da classe `list`: -->
+::: columns
+::: {.column width="70%"}
+[Exemplo]{.red}: Perceba que podemos comparar `l1 == l2`, uma vez que
+`__eq__` é um método da classe `list`. Note também que podemos fazer
+`len(l1)` ou `len(l2)` uma vez que existe o método `__len__`
+implementado no interior da classe `list`:
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| results: hold -->
+```{python}
+#| results: hold
 
-<!-- # Criando duas listas (l1 e l2): -->
-<!-- l1 = [100, 2, 7, 8, 10] -->
-<!-- l2 = [12, 20, -1] -->
+# Criando duas listas (l1 e l2):
+l1 = [100, 2, 7, 8, 10]
+l2 = [12, 20, -1]
 
-<!-- # Só é possível comparar l1 com l2 abaixo, pois quem implementou -->
-<!-- # a classe list, implementou o método mágico __eq__: -->
-<!-- l1 == l2 -->
+# Só é possível comparar l1 com l2 abaixo, pois quem implementou
+# a classe list, implementou o método mágico __eq__:
+l1 == l2
 
-<!-- # Equivale a fazer -->
-<!-- l1.__eq__(l2) -->
+# Equivale a fazer
+l1.__eq__(l2)
 
-<!-- # Podemos obter o tamanho de uma lista porque existe o método -->
-<!-- # __len__ implementado na classe list: -->
-<!-- len(l1) -->
+# Podemos obter o tamanho de uma lista porque existe o método
+# __len__ implementado na classe list:
+len(l1)
 
-<!-- # Poderíamos ter feito: -->
-<!-- l1.__len__() -->
-<!-- ``` -->
+# Poderíamos ter feito:
+l1.__len__()
+```
 
-<!-- <br> -->
+<br>
 
-<!-- [Exercício]{.red}: Pesquise na internet qual a flexibilidade que os -->
-<!-- métodos mágicos `__le__`, `__lt__`, `__ge__` e `__gt__` fornecem a -->
-<!-- classe list ou a qualquer classe que os contém. -->
-<!-- ::: -->
+[Exercício]{.red}: Pesquise na internet qual a flexibilidade que os
+métodos mágicos `__le__`, `__lt__`, `__ge__` e `__gt__` fornecem a
+classe list ou a qualquer classe que os contém.
+:::
 
-<!-- ::: {.column width="30%"} -->
-<!-- ::: -->
-<!-- ::: -->
+::: {.column width="30%"}
+:::
+:::
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: Não precisa entender o código por completo. Apenas note -->
-<!-- que implementei o método mágico `__sub__` de Python e criei uma nova -->
-<!-- classe de listas, de nome `MinhaLista`, que permite subtrair duas -->
-<!-- listas. Note que não podemos subtrair listas padrões de Python, porém, -->
-<!-- agora poderemos subtrair objetos da classe `MinhaLista` segundo alguma -->
-<!-- lógica. A lógica implementada em `__sub__` é subtrair os dois primeiros -->
-<!-- elementos. Você poderia implementar qualquer outra! Aqui, `MinhaLista` é -->
-<!-- uma subclasse (classe derivada/classe filha) de `list`. -->
+[Exemplo]{.red}: Não precisa entender o código por completo. Apenas note
+que implementei o método mágico `__sub__` de Python e criei uma nova
+classe de listas, de nome `MinhaLista`, que permite subtrair duas
+listas. Note que não podemos subtrair listas padrões de Python, porém,
+agora poderemos subtrair objetos da classe `MinhaLista` segundo alguma
+lógica. A lógica implementada em `__sub__` é subtrair os dois primeiros
+elementos. Você poderia implementar qualquer outra! Aqui, `MinhaLista` é
+uma subclasse (classe derivada/classe filha) de `list`.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- class MinhaLista(list): -->
-<!--     # Adicionando a capacidade de subtrair. Aqui -->
-<!--     # será subtraído os primeiros elementos: -->
-<!--     def __sub__(self, outra): -->
-<!--         return self[0] - outra[0] -->
+```{python}
+#| results: hold
+class MinhaLista(list):
+    # Adicionando a capacidade de subtrair. Aqui
+    # será subtraído os primeiros elementos:
+    def __sub__(self, outra):
+        return self[0] - outra[0]
 
-<!-- # Cirando dois objetos da classe MinhaLista: -->
-<!-- l1 = MinhaLista([1, 2, 3]) -->
-<!-- l2 = MinhaLista([5, 4, 3]) -->
+# Cirando dois objetos da classe MinhaLista:
+l1 = MinhaLista([1, 2, 3])
+l2 = MinhaLista([5, 4, 3])
 
-<!-- # Agora posso subtrair duas listas segundo alguma lógica: -->
-<!-- l1 - l2 -->
-<!-- ``` -->
+# Agora posso subtrair duas listas segundo alguma lógica:
+l1 - l2
+```
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- Portanto, os [métodos mágicos]{.red} são nada mais que métodos -->
-<!-- implementados na definição de uma classe de Python que visam dar maior -->
-<!-- flexibilidade aos objetos (instâncias) dessas classes, permitindo, por -->
-<!-- exemplo, definir operações de soma, subtração, multiplicação, divisão, -->
-<!-- comparações usando operadores relacionais entre objetos, calcular o -->
-<!-- tamanho, entre outros recursos. -->
+Portanto, os [métodos mágicos]{.red} são nada mais que métodos
+implementados na definição de uma classe de Python que visam dar maior
+flexibilidade aos objetos (instâncias) dessas classes, permitindo, por
+exemplo, definir operações de soma, subtração, multiplicação, divisão,
+comparações usando operadores relacionais entre objetos, calcular o
+tamanho, entre outros recursos.
 
-<!-- <br> -->
+<br>
 
-<!-- Por exemplo, somar duas strings significa juntá-las. O que uma operação -->
-<!-- irá fazer depende do que você implementar na lógica da função. Você -->
-<!-- aprenderá isso mais tarde. -->
+Por exemplo, somar duas strings significa juntá-las. O que uma operação
+irá fazer depende do que você implementar na lógica da função. Você
+aprenderá isso mais tarde.
 
-<!-- <br> -->
+<br>
 
-<!-- Foque, por enquanto, apenas nos métodos de um objeto do tipo `list` -->
-<!-- cujos nomes não estão envoltos de `__`, isto é, nos métodos que não são -->
-<!-- "métodos mágicos". -->
+Foque, por enquanto, apenas nos métodos de um objeto do tipo `list`
+cujos nomes não estão envoltos de `__`, isto é, nos métodos que não são
+"métodos mágicos".
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- # Desconsidere o código abaixo. Estou usando apenas para -->
-<!-- # listar os métodos que não começam com '_'. -->
-<!-- [x for x in dir(list) if not x.startswith('_')] -->
-<!-- ``` -->
+```{python}
+# Desconsidere o código abaixo. Estou usando apenas para
+# listar os métodos que não começam com '_'.
+[x for x in dir(list) if not x.startswith('_')]
+```
 
 <!-- ## Listas -->
 

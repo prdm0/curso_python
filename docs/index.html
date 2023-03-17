@@ -408,7 +408,7 @@ Prof.&nbsp;Dr.&nbsp;Pedro Rafael D. Marinho<br>Departamento de Estatística - UF
 </div>
 </div>
 
-  <p class="date">13/03/2023</p>
+  <p class="date">17/03/2023</p>
 </section><section class="slide level2"><div class="cell">
 
 </div>
@@ -444,8 +444,8 @@ Prof.&nbsp;Dr.&nbsp;Pedro Rafael D. Marinho<br>Departamento de Estatística - UF
 </section><section id="meu-segundo-lar" class="slide level2" data-background-color="black" data-background-image="https://raw.githubusercontent.com/prdm0/imagens/main/foto_aerea_ufpb.jpeg" data-background-size="1600px" data-background-repeat="repeat" data-background-opacity="0.35"><h2>Meu segundo lar</h2>
 <div class="cell" width="100" height="100">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-59ef0ef9f9233ae516f9" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-59ef0ef9f9233ae516f9">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addMarkers","args":[-7.1404,-34.846199,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"limits":{"lat":[-7.1404,-7.1404],"lng":[-34.846199,-34.846199]},"setView":[[-7.1404,-34.846199],37,{"maxWidth":1500,"minWidth":1600,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script><p>Departamento de Estatística da UFPB.</p>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-25879404f0f065cf91db" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-25879404f0f065cf91db">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addMarkers","args":[-7.1404,-34.846199,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"limits":{"lat":[-7.1404,-7.1404],"lng":[-34.846199,-34.846199]},"setView":[[-7.1404,-34.846199],37,{"maxWidth":1500,"minWidth":1600,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script><p>Departamento de Estatística da UFPB.</p>
 </div>
 </div>
 </section></section><section><section id="section-2" class="title-slide slide level1 title center"><h1></h1>
@@ -2215,272 +2215,309 @@ Idade = ____35____
 Altura = .....171.50cm</code></pre>
 </div>
 </div>
-<!-- ## Utilizando f-strings -->
-<!-- <br> -->
-<!-- A partir da versão 3.6 de Python, uma nova forma bastante conveniente -->
-<!-- surgiu para realizar composição de strings, são as chamadas -->
-<!-- [f-strings]{.red}. Chama-se assim pois usamos notação `f""`. <br> -->
-<!-- <br> -->
-<!-- **Diferenças e semelhaças para o uso do** `format()`: -->
-<!-- 1.  [Diferença]{.orange}: Você deverá passar os nomes das variáveis em -->
-<!--     `{}`; -->
-<!-- 2.  [Semelhanças]{.orange}: as regras de formatação após os `:` são -->
-<!--     indênticas às descritas para o método `format()`. -->
-<!-- ::: fragment -->
-<!-- [Exemplo]{.red}: utilizando f-string com operações de alinhamento. -->
-<!-- ```{python} -->
-<!-- nome = "Pedro Rafael" -->
-<!-- altura = 171.5 -->
-<!-- unidade = "cm" -->
-<!-- idade = 35 -->
-<!-- print(f"Nome: {nome:.<20}\nAltura: {altura:.^8.2f}{unidade}\nIdade: {idade:0=3d}") -->
-<!-- ``` -->
-<!-- ::: -->
-<!-- ## Fatiando strings -->
-<!-- <br> -->
-<!-- Em Python, assim como poderemos fazer em outas estruturas de dados que -->
-<!-- veremos, uma string é um iterador, isto é, é um objeto ao qual poderemos -->
-<!-- percorrer. -->
-<!-- <br> -->
-<!-- **Se podemos percober, então isso implica que poderemos acessar -->
-<!-- subelementos.** -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: Acessando substrings de uma string principal. -->
-<!-- ```{python} -->
-<!-- s = "Bem vindo ao curso de Python pessoal" -->
-<!-- print(s[0]) -->
-<!-- print(s[len(s) - 1]) -->
-<!-- print(s[:5]) -->
-<!-- print(s[-3:-1]) -->
-<!-- print(s[:]) -->
-<!-- print(s[:-8]) -->
-<!-- ``` -->
-<!-- ## Fatiando strings {background-image="imgs/rawpixel/image-from-rawpixel-id-8693208-jpeg.jpg" background-size="contain" background-position="right"} -->
-<!-- ::: columns -->
-<!-- ::: {.column width="60%"} -->
-<!-- <br> -->
-<!-- [Algumas observações]{.red} -->
-<!-- <br> -->
-<!-- Python é **zero-based**, i.e., o seu sistema de indexão começa em zero -->
-<!-- <br> -->
-<!-- No que indexão de trás para frente são realizadas utilizando valores -->
-<!-- negativos e o último elemento é o elemento -1, uma vez que 0 = -0, e -->
-<!-- portanto não faria sentido indexar de trás para frete a partir do índice -->
-<!-- -0. -->
-<!-- <br> -->
-<!-- Strings não são estruturas de dados, e sim, tipos de dados! Todavia, é -->
-<!-- possível realizar indexações como vimos. As demais estruturas de dados -->
-<!-- de Python, em que poderemos utilizar índices para acessar seus -->
-<!-- elementos, segue o mesmo esquema de indexação das strings, por exemplo, -->
-<!-- as listas e tuplas. -->
-<!-- ::: -->
-<!-- ::: {.column width="40%"} -->
-<!-- ::: -->
-<!-- ::: -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- Em Python, listas são um tipo de **estrutura de dados** em que podemos -->
-<!-- armazenar dados, podendo ser de **tipos diferentes**, e podemos -->
-<!-- percorrer pelo índice do elemento na lista. -->
-<!-- <br> -->
-<!-- Lembre-se que assim como as strings, as demais estruturas de dados de -->
-<!-- Python **começam sua indexação por zero**. -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: Note que acessar os índices de trás para crente, a -->
-<!-- indexação começa de $-1$, do mesmo modo que em strings e em arrays do -->
-<!-- Numpy adiante no curso. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- # Criando uma lista vazia -->
-<!-- l1 = [] -->
-<!-- # Criando uma lista de valores inteiros -->
-<!-- l2 = [1, 6, 8] -->
-<!-- # Acessando o primeiro elemento de l2 -->
-<!-- l2[0] -->
-<!-- # Acessando o último elemento de l2 -->
-<!-- l2[-1] -->
-<!-- # Acessando os dois últimos elementos -->
-<!-- l2[-2:] -->
-<!-- # Acessando os dois primeiros -->
-<!-- l2[0:2] -->
-<!-- # Também acessando os dois primeiros -->
-<!-- l2[-3:-1] -->
-<!-- ``` -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- Também poderemos ter listas aninhadas e o acesso se dá da mesma forma. O -->
-<!-- exemplo que segue explora isso. Leia os comentários. -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: Criando listas aninhadas e acessando seus elementos. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- # Frutas -->
-<!-- frutas = ['laranja', 'uva', 'maçã', 'tomate'] -->
-<!-- quantidade_frutas = [10, 20, 5, 8] -->
-<!-- # Verduras -->
-<!-- verduras = ['cebola', 'alho', 'pimentão'] -->
-<!-- quantidade_verduras = [10, 8, 5] -->
-<!-- # Frutas e verduras -->
-<!-- frutas_e_verduras = [[frutas, quantidade_frutas], [verduras, quantidade_verduras]] -->
-<!-- # Obtendo da lista aninhada frutas_e_verduras, apenas as frutas: -->
-<!-- frutas_e_verduras[0][0] -->
-<!-- # Quais as duas últimas frutas? -->
-<!-- frutas_e_verduras[0][0][len(frutas_e_verduras[0][0])-2:] -->
-<!-- ``` -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- Em linguagens orientadas à objetos, como Python, quase tudo são objetos. -->
-<!-- Objetos geralmente possui métodos associados. Objetos da classe `list` -->
-<!-- fornecem diversos métodos úteis. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| output-location: column-fragment -->
-<!-- #| results: hold -->
-<!-- # Criando uma lista -->
-<!-- lista = ["João", "Maria", "José", "Pedro"] -->
-<!-- # Chegando o tipo: -->
-<!-- type(lista) -->
-<!-- # Testando a instância: -->
-<!-- isinstance(lista, list) -->
-<!-- # ou -->
-<!-- type(lista) == list -->
-<!-- # Listando os métodos de um objeto do tipo list -->
-<!-- dir(lista) -->
-<!-- ``` -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- Alguns métoods aparerem com os nomes envolvidos por duplo underscores -->
-<!-- `__`. Esses métodos são chamados de métodos mágicos ou métodos dunder. -->
-<!-- Tais métodos são úteis para permitir flexibilidade na classe. Por -->
-<!-- exemplo, os desenvolvedores da classe list implementaram o método -->
-<!-- `__add__` que permitirá a soma de duas listas. -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: Note que foi possível chamar o método mágico `__add__` -->
-<!-- de um objeto da classe `list`. Invocar o método mágico diretamente pode -->
-<!-- não ser uma boa prática. A implementação de `__add__` na classe interna -->
-<!-- `list` permite que possamos usar o operador binário `+` para somar -->
-<!-- listas. Note que a soma de listas nesse caso significa concatenar as -->
-<!-- listas. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| results: asis -->
-<!-- #| output-location: column-fragment -->
-<!-- l1 = [1, 2, 7, 8, 10] -->
-<!-- l2 = [12, 20, -1] -->
-<!-- # __add__ é um método mágico que se implementado na -->
-<!-- # definição da classe permite que possamos somar -->
-<!-- # duas listas assim: -->
-<!-- l1 + l2 -->
-<!-- # Ou então assim: -->
-<!-- l1.__add__(l2) -->
-<!-- ``` -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- É aconselhável evitar o uso direto dos métodos mágicos em Python. Os -->
-<!-- métodos mágicos são uma forma de encapsulamento e ocultação de código -->
-<!-- que permite ao programador escrever código mais conciso e limpo. No -->
-<!-- entanto, os métodos mágicos também podem tornar o código mais difícil de -->
-<!-- entender e manter, portanto, é importante usá-los com sabedoria. -->
-<!-- <br> -->
-<!-- Usando palavras mais diretas, quando você estiver implementando suas -->
-<!-- próprias classes, você poderá implementar, por exemplo, o método mágico -->
-<!-- `__add__` que permitirá você utilizar operações de soma com seus -->
-<!-- objetos. -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: Método `__doc__` é usado para retornar docstrings -->
-<!-- (strings de documentação) de métodos e objetos. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- #| output-location: column-fragment -->
-<!-- # Criando uma lista vazia: -->
-<!-- sou_uma_lista = list() -->
-<!-- # Outra forma de criar uma lista vazia: -->
-<!-- sou_uma_lista = [] -->
-<!-- # Invocando o método mágico __doc__ -->
-<!-- # Ele retorna uma docstring com informações sobre o objeto -->
-<!-- sou_uma_lista.__doc__ -->
-<!-- ``` -->
-<!-- ## Listas {background-image="imgs/rawpixel/image-from-rawpixel-id-5743490-jpeg.jpg" background-size="contain" background-position="right"} -->
-<!-- <br> -->
-<!-- ::: columns -->
-<!-- ::: {.column width="70%"} -->
-<!-- [Exemplo]{.red}: Perceba que podemos comparar `l1 == l2`, uma vez que -->
-<!-- `__eq__` é um método da classe `list`. Note também que podemos fazer -->
-<!-- `len(l1)` ou `len(l2)` uma vez que existe o método `__len__` -->
-<!-- implementado no interior da classe `list`: -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- # Criando duas listas (l1 e l2): -->
-<!-- l1 = [100, 2, 7, 8, 10] -->
-<!-- l2 = [12, 20, -1] -->
-<!-- # Só é possível comparar l1 com l2 abaixo, pois quem implementou -->
-<!-- # a classe list, implementou o método mágico __eq__: -->
-<!-- l1 == l2 -->
-<!-- # Equivale a fazer -->
-<!-- l1.__eq__(l2) -->
-<!-- # Podemos obter o tamanho de uma lista porque existe o método -->
-<!-- # __len__ implementado na classe list: -->
-<!-- len(l1) -->
-<!-- # Poderíamos ter feito: -->
-<!-- l1.__len__() -->
-<!-- ``` -->
-<!-- <br> -->
-<!-- [Exercício]{.red}: Pesquise na internet qual a flexibilidade que os -->
-<!-- métodos mágicos `__le__`, `__lt__`, `__ge__` e `__gt__` fornecem a -->
-<!-- classe list ou a qualquer classe que os contém. -->
-<!-- ::: -->
-<!-- ::: {.column width="30%"} -->
-<!-- ::: -->
-<!-- ::: -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: Não precisa entender o código por completo. Apenas note -->
-<!-- que implementei o método mágico `__sub__` de Python e criei uma nova -->
-<!-- classe de listas, de nome `MinhaLista`, que permite subtrair duas -->
-<!-- listas. Note que não podemos subtrair listas padrões de Python, porém, -->
-<!-- agora poderemos subtrair objetos da classe `MinhaLista` segundo alguma -->
-<!-- lógica. A lógica implementada em `__sub__` é subtrair os dois primeiros -->
-<!-- elementos. Você poderia implementar qualquer outra! Aqui, `MinhaLista` é -->
-<!-- uma subclasse (classe derivada/classe filha) de `list`. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- class MinhaLista(list): -->
-<!--     # Adicionando a capacidade de subtrair. Aqui -->
-<!--     # será subtraído os primeiros elementos: -->
-<!--     def __sub__(self, outra): -->
-<!--         return self[0] - outra[0] -->
-<!-- # Cirando dois objetos da classe MinhaLista: -->
-<!-- l1 = MinhaLista([1, 2, 3]) -->
-<!-- l2 = MinhaLista([5, 4, 3]) -->
-<!-- # Agora posso subtrair duas listas segundo alguma lógica: -->
-<!-- l1 - l2 -->
-<!-- ``` -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- Portanto, os [métodos mágicos]{.red} são nada mais que métodos -->
-<!-- implementados na definição de uma classe de Python que visam dar maior -->
-<!-- flexibilidade aos objetos (instâncias) dessas classes, permitindo, por -->
-<!-- exemplo, definir operações de soma, subtração, multiplicação, divisão, -->
-<!-- comparações usando operadores relacionais entre objetos, calcular o -->
-<!-- tamanho, entre outros recursos. -->
-<!-- <br> -->
-<!-- Por exemplo, somar duas strings significa juntá-las. O que uma operação -->
-<!-- irá fazer depende do que você implementar na lógica da função. Você -->
-<!-- aprenderá isso mais tarde. -->
-<!-- <br> -->
-<!-- Foque, por enquanto, apenas nos métodos de um objeto do tipo `list` -->
-<!-- cujos nomes não estão envoltos de `__`, isto é, nos métodos que não são -->
-<!-- "métodos mágicos". -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- # Desconsidere o código abaixo. Estou usando apenas para -->
-<!-- # listar os métodos que não começam com '_'. -->
-<!-- [x for x in dir(list) if not x.startswith('_')] -->
-<!-- ``` -->
+</section><section id="utilizando-f-strings" class="slide level2"><h2>Utilizando f-strings</h2>
+<p><br></p>
+<p>A partir da versão 3.6 de Python, uma nova forma bastante conveniente surgiu para realizar composição de strings, são as chamadas <span class="red">f-strings</span>. Chama-se assim pois usamos notação <code>f""</code>. <br></p>
+<p><br></p>
+<p><strong>Diferenças e semelhaças para o uso do</strong> <code><a href="https://rdrr.io/r/base/format.html">format()</a></code>:</p>
+<ol type="1">
+<li class="fragment">
+<span class="orange">Diferença</span>: Você deverá passar os nomes das variáveis em <code><a href="https://rdrr.io/r/base/Paren.html">{}</a></code>;</li>
+<li class="fragment">
+<span class="orange">Semelhanças</span>: as regras de formatação após os <code>:</code> são indênticas às descritas para o método <code><a href="https://rdrr.io/r/base/format.html">format()</a></code>.</li>
+</ol>
+<div class="fragment">
+<p><span class="red">Exemplo</span>: utilizando f-string com operações de alinhamento.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb93-1"><a href="#cb93-1"></a>nome <span class="op">=</span> <span class="st">"Pedro Rafael"</span></span>
+<span id="cb93-2"><a href="#cb93-2"></a>altura <span class="op">=</span> <span class="fl">171.5</span></span>
+<span id="cb93-3"><a href="#cb93-3"></a>unidade <span class="op">=</span> <span class="st">"cm"</span></span>
+<span id="cb93-4"><a href="#cb93-4"></a>idade <span class="op">=</span> <span class="dv">35</span></span>
+<span id="cb93-5"><a href="#cb93-5"></a><span class="bu">print</span>(<span class="ss">f"Nome: </span><span class="sc">{</span>nome<span class="sc">:.&lt;20}</span><span class="ch">\n</span><span class="ss">Altura: </span><span class="sc">{</span>altura<span class="sc">:.^8.2f}{</span>unidade<span class="sc">}</span><span class="ch">\n</span><span class="ss">Idade: </span><span class="sc">{</span>idade<span class="sc">:0=3d}</span><span class="ss">"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Nome: Pedro Rafael........
+Altura: .171.50.cm
+Idade: 035</code></pre>
+</div>
+</div>
+</div>
+</section><section id="fatiando-strings" class="slide level2"><h2>Fatiando strings</h2>
+<p><br></p>
+<p>Em Python, assim como poderemos fazer em outas estruturas de dados que veremos, uma string é um iterador, isto é, é um objeto ao qual poderemos percorrer.</p>
+<p><br></p>
+<p><strong>Se podemos percober, então isso implica que poderemos acessar subelementos.</strong></p>
+<p><br></p>
+<p><span class="red">Exemplo</span>: Acessando substrings de uma string principal.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb95"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1"></a>s <span class="op">=</span> <span class="st">"Bem vindo ao curso de Python pessoal"</span></span>
+<span id="cb95-2"><a href="#cb95-2"></a></span>
+<span id="cb95-3"><a href="#cb95-3"></a><span class="bu">print</span>(s[<span class="dv">0</span>])</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>B</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb97-1"><a href="#cb97-1"></a><span class="bu">print</span>(s[<span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">1</span>])</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>l</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb99"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb99-1"><a href="#cb99-1"></a><span class="bu">print</span>(s[:<span class="dv">5</span>])</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Bem v</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb101"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb101-1"><a href="#cb101-1"></a><span class="bu">print</span>(s[<span class="op">-</span><span class="dv">3</span>:<span class="op">-</span><span class="dv">1</span>])</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>oa</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb103"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb103-1"><a href="#cb103-1"></a><span class="bu">print</span>(s[:])</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Bem vindo ao curso de Python pessoal</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb105"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb105-1"><a href="#cb105-1"></a><span class="bu">print</span>(s[:<span class="op">-</span><span class="dv">8</span>])</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Bem vindo ao curso de Python</code></pre>
+</div>
+</div>
+</section><section id="fatiando-strings-1" class="slide level2" data-background-image="imgs/rawpixel/image-from-rawpixel-id-8693208-jpeg.jpg" data-background-size="contain" data-background-position="right"><h2>Fatiando strings</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><br></p>
+<p><span class="red">Algumas observações</span></p>
+<p><br></p>
+<p>Python é <strong>zero-based</strong>, i.e., o seu sistema de indexão começa em zero</p>
+<p><br></p>
+<p>No que indexão de trás para frente são realizadas utilizando valores negativos e o último elemento é o elemento -1, uma vez que 0 = -0, e portanto não faria sentido indexar de trás para frete a partir do índice -0.</p>
+<p><br></p>
+<p>Strings não são estruturas de dados, e sim, tipos de dados! Todavia, é possível realizar indexações como vimos. As demais estruturas de dados de Python, em que poderemos utilizar índices para acessar seus elementos, segue o mesmo esquema de indexação das strings, por exemplo, as listas e tuplas.</p>
+</div><div class="column" style="width:40%;">
+
+</div>
+</div>
+</section><section id="listas" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p>Em Python, listas são um tipo de <strong>estrutura de dados</strong> em que podemos armazenar dados, podendo ser de <strong>tipos diferentes</strong>, e podemos percorrer pelo índice do elemento na lista.</p>
+<p><br></p>
+<p>Lembre-se que assim como as strings, as demais estruturas de dados de Python <strong>começam sua indexação por zero</strong>.</p>
+<p><br></p>
+<p><span class="red">Exemplo</span>: Note que acessar os índices de trás para crente, a indexação começa de <span class="math inline">\(-1\)</span>, do mesmo modo que em strings e em arrays do Numpy adiante no curso.</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb107"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb107-1"><a href="#cb107-1"></a><span class="co"># Criando uma lista vazia</span></span>
+<span id="cb107-2"><a href="#cb107-2"></a>l1 <span class="op">=</span> []</span>
+<span id="cb107-3"><a href="#cb107-3"></a><span class="co"># Criando uma lista de valores inteiros</span></span>
+<span id="cb107-4"><a href="#cb107-4"></a>l2 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">8</span>]</span>
+<span id="cb107-5"><a href="#cb107-5"></a></span>
+<span id="cb107-6"><a href="#cb107-6"></a><span class="co"># Acessando o primeiro elemento de l2</span></span>
+<span id="cb107-7"><a href="#cb107-7"></a>l2[<span class="dv">0</span>]</span>
+<span id="cb107-8"><a href="#cb107-8"></a></span>
+<span id="cb107-9"><a href="#cb107-9"></a><span class="co"># Acessando o último elemento de l2</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb109"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb109-1"><a href="#cb109-1"></a>l2[<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb109-2"><a href="#cb109-2"></a></span>
+<span id="cb109-3"><a href="#cb109-3"></a><span class="co"># Acessando os dois últimos elementos</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>8</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb111"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb111-1"><a href="#cb111-1"></a>l2[<span class="op">-</span><span class="dv">2</span>:]</span>
+<span id="cb111-2"><a href="#cb111-2"></a></span>
+<span id="cb111-3"><a href="#cb111-3"></a><span class="co"># Acessando os dois primeiros</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[6, 8]</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb113"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb113-1"><a href="#cb113-1"></a>l2[<span class="dv">0</span>:<span class="dv">2</span>]</span>
+<span id="cb113-2"><a href="#cb113-2"></a></span>
+<span id="cb113-3"><a href="#cb113-3"></a><span class="co"># Também acessando os dois primeiros</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1, 6]</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb115"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb115-1"><a href="#cb115-1"></a>l2[<span class="op">-</span><span class="dv">3</span>:<span class="op">-</span><span class="dv">1</span>]</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1, 6]</code></pre>
+</div>
+</div>
+</section><section id="listas-1" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p>Também poderemos ter listas aninhadas e o acesso se dá da mesma forma. O exemplo que segue explora isso. Leia os comentários.</p>
+<p><br></p>
+<p><span class="red">Exemplo</span>: Criando listas aninhadas e acessando seus elementos.</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb117"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb117-1"><a href="#cb117-1"></a><span class="co"># Frutas</span></span>
+<span id="cb117-2"><a href="#cb117-2"></a>frutas <span class="op">=</span> [<span class="st">'laranja'</span>, <span class="st">'uva'</span>, <span class="st">'maçã'</span>, <span class="st">'tomate'</span>]</span>
+<span id="cb117-3"><a href="#cb117-3"></a>quantidade_frutas <span class="op">=</span> [<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">5</span>, <span class="dv">8</span>]</span>
+<span id="cb117-4"><a href="#cb117-4"></a></span>
+<span id="cb117-5"><a href="#cb117-5"></a><span class="co"># Verduras</span></span>
+<span id="cb117-6"><a href="#cb117-6"></a>verduras <span class="op">=</span> [<span class="st">'cebola'</span>, <span class="st">'alho'</span>, <span class="st">'pimentão'</span>]</span>
+<span id="cb117-7"><a href="#cb117-7"></a>quantidade_verduras <span class="op">=</span> [<span class="dv">10</span>, <span class="dv">8</span>, <span class="dv">5</span>]</span>
+<span id="cb117-8"><a href="#cb117-8"></a></span>
+<span id="cb117-9"><a href="#cb117-9"></a><span class="co"># Frutas e verduras</span></span>
+<span id="cb117-10"><a href="#cb117-10"></a>frutas_e_verduras <span class="op">=</span> [[frutas, quantidade_frutas], [verduras, quantidade_verduras]]</span>
+<span id="cb117-11"><a href="#cb117-11"></a></span>
+<span id="cb117-12"><a href="#cb117-12"></a><span class="co"># Obtendo da lista aninhada frutas_e_verduras, apenas as frutas:</span></span>
+<span id="cb117-13"><a href="#cb117-13"></a>frutas_e_verduras[<span class="dv">0</span>][<span class="dv">0</span>]</span>
+<span id="cb117-14"><a href="#cb117-14"></a></span>
+<span id="cb117-15"><a href="#cb117-15"></a><span class="co"># Quais as duas últimas frutas?</span></span>
+<span id="cb117-16"><a href="#cb117-16"></a>frutas_e_verduras[<span class="dv">0</span>][<span class="dv">0</span>][<span class="bu">len</span>(frutas_e_verduras[<span class="dv">0</span>][<span class="dv">0</span>])<span class="op">-</span><span class="dv">2</span>:]</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>['laranja', 'uva', 'maçã', 'tomate']
+['maçã', 'tomate']</code></pre>
+</div>
+</div>
+</section><section id="listas-2" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p>Em linguagens orientadas à objetos, como Python, quase tudo são objetos. Objetos geralmente possui métodos associados. Objetos da classe <code>list</code> fornecem diversos métodos úteis.</p>
+<p><br></p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb119"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb119-1"><a href="#cb119-1"></a><span class="co"># Criando uma lista</span></span>
+<span id="cb119-2"><a href="#cb119-2"></a>lista <span class="op">=</span> [<span class="st">"João"</span>, <span class="st">"Maria"</span>, <span class="st">"José"</span>, <span class="st">"Pedro"</span>]</span>
+<span id="cb119-3"><a href="#cb119-3"></a></span>
+<span id="cb119-4"><a href="#cb119-4"></a><span class="co"># Chegando o tipo:</span></span>
+<span id="cb119-5"><a href="#cb119-5"></a><span class="bu">type</span>(lista)</span>
+<span id="cb119-6"><a href="#cb119-6"></a></span>
+<span id="cb119-7"><a href="#cb119-7"></a><span class="co"># Testando a instância:</span></span>
+<span id="cb119-8"><a href="#cb119-8"></a><span class="bu">isinstance</span>(lista, <span class="bu">list</span>)</span>
+<span id="cb119-9"><a href="#cb119-9"></a></span>
+<span id="cb119-10"><a href="#cb119-10"></a><span class="co"># ou</span></span>
+<span id="cb119-11"><a href="#cb119-11"></a></span>
+<span id="cb119-12"><a href="#cb119-12"></a><span class="bu">type</span>(lista) <span class="op">==</span> <span class="bu">list</span></span>
+<span id="cb119-13"><a href="#cb119-13"></a></span>
+<span id="cb119-14"><a href="#cb119-14"></a><span class="co"># Listando os métodos de um objeto do tipo list</span></span>
+<span id="cb119-15"><a href="#cb119-15"></a><span class="bu">dir</span>(lista)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="column fragment">
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'list'&gt;
+True
+True
+['__add__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']</code></pre>
+</div>
+</div>
+</div>
+</section><section id="listas-3" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p>Alguns métoods aparerem com os nomes envolvidos por duplo underscores <code>__</code>. Esses métodos são chamados de métodos mágicos ou métodos dunder. Tais métodos são úteis para permitir flexibilidade na classe. Por exemplo, os desenvolvedores da classe list implementaram o método <code>__add__</code> que permitirá a soma de duas listas.</p>
+<p><br></p>
+<p><span class="red">Exemplo</span>: Note que foi possível chamar o método mágico <code>__add__</code> de um objeto da classe <code>list</code>. Invocar o método mágico diretamente pode não ser uma boa prática. A implementação de <code>__add__</code> na classe interna <code>list</code> permite que possamos usar o operador binário <code>+</code> para somar listas. Note que a soma de listas nesse caso significa concatenar as listas.</p>
+<p><br></p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb121"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb121-1"><a href="#cb121-1"></a>l1 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">10</span>]</span>
+<span id="cb121-2"><a href="#cb121-2"></a>l2 <span class="op">=</span> [<span class="dv">12</span>, <span class="dv">20</span>, <span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb121-3"><a href="#cb121-3"></a></span>
+<span id="cb121-4"><a href="#cb121-4"></a><span class="co"># __add__ é um método mágico que se implementado na</span></span>
+<span id="cb121-5"><a href="#cb121-5"></a><span class="co"># definição da classe permite que possamos somar</span></span>
+<span id="cb121-6"><a href="#cb121-6"></a><span class="co"># duas listas assim:</span></span>
+<span id="cb121-7"><a href="#cb121-7"></a>l1 <span class="op">+</span> l2</span>
+<span id="cb121-8"><a href="#cb121-8"></a></span>
+<span id="cb121-9"><a href="#cb121-9"></a><span class="co"># Ou então assim:</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="column fragment">
+<p>[1, 2, 7, 8, 10, 12, 20, -1]</p>
+<div class="sourceCode cell-code" id="cb122"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb122-1"><a href="#cb122-1"></a>l1.<span class="fu">__add__</span>(l2)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>[1, 2, 7, 8, 10, 12, 20, -1]</p>
+</div>
+</div>
+</section><section id="listas-4" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p>É aconselhável evitar o uso direto dos métodos mágicos em Python. Os métodos mágicos são uma forma de encapsulamento e ocultação de código que permite ao programador escrever código mais conciso e limpo. No entanto, os métodos mágicos também podem tornar o código mais difícil de entender e manter, portanto, é importante usá-los com sabedoria.</p>
+<p><br></p>
+<p>Usando palavras mais diretas, quando você estiver implementando suas próprias classes, você poderá implementar, por exemplo, o método mágico <code>__add__</code> que permitirá você utilizar operações de soma com seus objetos.</p>
+<p><br></p>
+<p><span class="red">Exemplo</span>: Método <code>__doc__</code> é usado para retornar docstrings (strings de documentação) de métodos e objetos.</p>
+<p><br></p>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb123"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb123-1"><a href="#cb123-1"></a><span class="co"># Criando uma lista vazia:</span></span>
+<span id="cb123-2"><a href="#cb123-2"></a>sou_uma_lista <span class="op">=</span> <span class="bu">list</span>()</span>
+<span id="cb123-3"><a href="#cb123-3"></a></span>
+<span id="cb123-4"><a href="#cb123-4"></a><span class="co"># Outra forma de criar uma lista vazia:</span></span>
+<span id="cb123-5"><a href="#cb123-5"></a>sou_uma_lista <span class="op">=</span> []</span>
+<span id="cb123-6"><a href="#cb123-6"></a></span>
+<span id="cb123-7"><a href="#cb123-7"></a><span class="co"># Invocando o método mágico __doc__</span></span>
+<span id="cb123-8"><a href="#cb123-8"></a><span class="co"># Ele retorna uma docstring com informações sobre o objeto</span></span>
+<span id="cb123-9"><a href="#cb123-9"></a>sou_uma_lista.__doc__</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="column fragment">
+<div class="cell-output cell-output-stdout">
+<pre><code>'Built-in mutable sequence.\n\nIf no argument is given, the constructor creates a new empty list.\nThe argument must be an iterable if specified.'</code></pre>
+</div>
+</div>
+</div>
+</section><section id="listas-5" class="slide level2" data-background-image="imgs/rawpixel/image-from-rawpixel-id-5743490-jpeg.jpg" data-background-size="contain" data-background-position="right"><h2>Listas</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><span class="red">Exemplo</span>: Perceba que podemos comparar <code>l1 == l2</code>, uma vez que <code>__eq__</code> é um método da classe <code>list</code>. Note também que podemos fazer <code>len(l1)</code> ou <code>len(l2)</code> uma vez que existe o método <code>__len__</code> implementado no interior da classe <code>list</code>:</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb125"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb125-1"><a href="#cb125-1"></a><span class="co"># Criando duas listas (l1 e l2):</span></span>
+<span id="cb125-2"><a href="#cb125-2"></a>l1 <span class="op">=</span> [<span class="dv">100</span>, <span class="dv">2</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">10</span>]</span>
+<span id="cb125-3"><a href="#cb125-3"></a>l2 <span class="op">=</span> [<span class="dv">12</span>, <span class="dv">20</span>, <span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb125-4"><a href="#cb125-4"></a></span>
+<span id="cb125-5"><a href="#cb125-5"></a><span class="co"># Só é possível comparar l1 com l2 abaixo, pois quem implementou</span></span>
+<span id="cb125-6"><a href="#cb125-6"></a><span class="co"># a classe list, implementou o método mágico __eq__:</span></span>
+<span id="cb125-7"><a href="#cb125-7"></a>l1 <span class="op">==</span> l2</span>
+<span id="cb125-8"><a href="#cb125-8"></a></span>
+<span id="cb125-9"><a href="#cb125-9"></a><span class="co"># Equivale a fazer</span></span>
+<span id="cb125-10"><a href="#cb125-10"></a>l1.<span class="fu">__eq__</span>(l2)</span>
+<span id="cb125-11"><a href="#cb125-11"></a></span>
+<span id="cb125-12"><a href="#cb125-12"></a><span class="co"># Podemos obter o tamanho de uma lista porque existe o método</span></span>
+<span id="cb125-13"><a href="#cb125-13"></a><span class="co"># __len__ implementado na classe list:</span></span>
+<span id="cb125-14"><a href="#cb125-14"></a><span class="bu">len</span>(l1)</span>
+<span id="cb125-15"><a href="#cb125-15"></a></span>
+<span id="cb125-16"><a href="#cb125-16"></a><span class="co"># Poderíamos ter feito:</span></span>
+<span id="cb125-17"><a href="#cb125-17"></a>l1.<span class="fu">__len__</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>False
+False
+5
+5</code></pre>
+</div>
+</div>
+<p><br></p>
+<p><span class="red">Exercício</span>: Pesquise na internet qual a flexibilidade que os métodos mágicos <code>__le__</code>, <code>__lt__</code>, <code>__ge__</code> e <code>__gt__</code> fornecem a classe list ou a qualquer classe que os contém.</p>
+</div><div class="column" style="width:30%;">
+
+</div>
+</div>
+</section><section id="listas-6" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p><span class="red">Exemplo</span>: Não precisa entender o código por completo. Apenas note que implementei o método mágico <code>__sub__</code> de Python e criei uma nova classe de listas, de nome <code>MinhaLista</code>, que permite subtrair duas listas. Note que não podemos subtrair listas padrões de Python, porém, agora poderemos subtrair objetos da classe <code>MinhaLista</code> segundo alguma lógica. A lógica implementada em <code>__sub__</code> é subtrair os dois primeiros elementos. Você poderia implementar qualquer outra! Aqui, <code>MinhaLista</code> é uma subclasse (classe derivada/classe filha) de <code>list</code>.</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb127"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb127-1"><a href="#cb127-1"></a><span class="kw">class</span> MinhaLista(<span class="bu">list</span>):</span>
+<span id="cb127-2"><a href="#cb127-2"></a>    <span class="co"># Adicionando a capacidade de subtrair. Aqui</span></span>
+<span id="cb127-3"><a href="#cb127-3"></a>    <span class="co"># será subtraído os primeiros elementos:</span></span>
+<span id="cb127-4"><a href="#cb127-4"></a>    <span class="kw">def</span> <span class="fu">__sub__</span>(<span class="va">self</span>, outra):</span>
+<span id="cb127-5"><a href="#cb127-5"></a>        <span class="cf">return</span> <span class="va">self</span>[<span class="dv">0</span>] <span class="op">-</span> outra[<span class="dv">0</span>]</span>
+<span id="cb127-6"><a href="#cb127-6"></a></span>
+<span id="cb127-7"><a href="#cb127-7"></a><span class="co"># Cirando dois objetos da classe MinhaLista:</span></span>
+<span id="cb127-8"><a href="#cb127-8"></a>l1 <span class="op">=</span> MinhaLista([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>])</span>
+<span id="cb127-9"><a href="#cb127-9"></a>l2 <span class="op">=</span> MinhaLista([<span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">3</span>])</span>
+<span id="cb127-10"><a href="#cb127-10"></a></span>
+<span id="cb127-11"><a href="#cb127-11"></a><span class="co"># Agora posso subtrair duas listas segundo alguma lógica:</span></span>
+<span id="cb127-12"><a href="#cb127-12"></a>l1 <span class="op">-</span> l2</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>-4</code></pre>
+</div>
+</div>
+</section><section id="listas-7" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p>Portanto, os <span class="red">métodos mágicos</span> são nada mais que métodos implementados na definição de uma classe de Python que visam dar maior flexibilidade aos objetos (instâncias) dessas classes, permitindo, por exemplo, definir operações de soma, subtração, multiplicação, divisão, comparações usando operadores relacionais entre objetos, calcular o tamanho, entre outros recursos.</p>
+<p><br></p>
+<p>Por exemplo, somar duas strings significa juntá-las. O que uma operação irá fazer depende do que você implementar na lógica da função. Você aprenderá isso mais tarde.</p>
+<p><br></p>
+<p>Foque, por enquanto, apenas nos métodos de um objeto do tipo <code>list</code> cujos nomes não estão envoltos de <code>__</code>, isto é, nos métodos que não são “métodos mágicos”.</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb129"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb129-1"><a href="#cb129-1"></a><span class="co"># Desconsidere o código abaixo. Estou usando apenas para</span></span>
+<span id="cb129-2"><a href="#cb129-2"></a><span class="co"># listar os métodos que não começam com '_'.</span></span>
+<span id="cb129-3"><a href="#cb129-3"></a>[x <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">dir</span>(<span class="bu">list</span>) <span class="cf">if</span> <span class="kw">not</span> x.startswith(<span class="st">'_'</span>)]</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>['append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']</code></pre>
+</div>
+</div>
 <!-- ## Listas -->
 <!-- <br> -->
 <!-- Abaixo segue uma tabela de métodos úteis de um objeto que é instância da -->
