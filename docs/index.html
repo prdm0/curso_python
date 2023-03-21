@@ -392,7 +392,7 @@
 <script src="site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script><script src="site_libs/jquery-1.12.4/jquery.min.js"></script><link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
 <script src="site_libs/leaflet-1.3.1/leaflet.js"></script><link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
 <script src="site_libs/proj4-2.6.2/proj4.min.js"></script><script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script><link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="site_libs/leaflet-binding-2.1.1/leaflet.js"></script>
+<script src="site_libs/leaflet-binding-2.1.2/leaflet.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -408,7 +408,7 @@ Prof.&nbsp;Dr.&nbsp;Pedro Rafael D. Marinho<br>Departamento de Estatística - UF
 </div>
 </div>
 
-  <p class="date">17/03/2023</p>
+  <p class="date">21/03/2023</p>
 </section><section class="slide level2"><div class="cell">
 
 </div>
@@ -444,8 +444,8 @@ Prof.&nbsp;Dr.&nbsp;Pedro Rafael D. Marinho<br>Departamento de Estatística - UF
 </section><section id="meu-segundo-lar" class="slide level2" data-background-color="black" data-background-image="https://raw.githubusercontent.com/prdm0/imagens/main/foto_aerea_ufpb.jpeg" data-background-size="1600px" data-background-repeat="repeat" data-background-opacity="0.35"><h2>Meu segundo lar</h2>
 <div class="cell" width="100" height="100">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-25879404f0f065cf91db" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-25879404f0f065cf91db">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addMarkers","args":[-7.1404,-34.846199,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"limits":{"lat":[-7.1404,-7.1404],"lng":[-34.846199,-34.846199]},"setView":[[-7.1404,-34.846199],37,{"maxWidth":1500,"minWidth":1600,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script><p>Departamento de Estatística da UFPB.</p>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-82bb62589dd2068065ef" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-82bb62589dd2068065ef">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addMarkers","args":[-7.1404,-34.846199,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"limits":{"lat":[-7.1404,-7.1404],"lng":[-34.846199,-34.846199]},"setView":[[-7.1404,-34.846199],37,{"maxWidth":1500,"minWidth":1600,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]},"evals":[],"jsHooks":[]}</script><p>Departamento de Estatística da UFPB.</p>
 </div>
 </div>
 </section></section><section><section id="section-2" class="title-slide slide level1 title center"><h1></h1>
@@ -1020,9 +1020,16 @@ Prof.&nbsp;Dr.&nbsp;Pedro Rafael D. Marinho<br>Departamento de Estatística - UF
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># Listando as bibliotecas e suas respectivas versões:</span></span>
 <span id="cb12-2"><a href="#cb12-2"></a><span class="ex">pip</span> freeze</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>bcc==0.18.0
+<pre><code>appdirs==1.4.4
+apsw==3.36.0.post1
+attrs==21.2.0
+backcall==0.2.0
+bcc==0.18.0
+beautifulsoup4==4.10.0
+beniget==0.4.1
 blinker==1.4
 Brlapi==0.8.3
+Brotli==1.0.9
 certifi==2020.6.20
 chardet==4.0.0
 chrome-gnome-shell==0.0.0
@@ -1030,63 +1037,120 @@ click==8.0.3
 colorama==0.4.4
 command-not-found==0.3
 cryptography==3.4.8
+css-parser==1.0.7
+cssselect==1.1.0
+cssutils==1.0.2
 cupshelpers==1.0
+cycler==0.11.0
 dbus-python==1.2.18
+decorator==4.4.2
 defer==1.0.6
 distro==1.7.0
-GDAL==3.4.1
+dnspython==2.1.0
+feedparser==6.0.8
+fonttools==4.29.1
+fs==2.4.12
+gast==0.5.2
 hidpidaemon==18.4.6
+html2text==2020.1.16
+html5-parser==0.4.10
+html5lib==1.1
 httplib2==0.20.2
 idna==3.3
+ifaddr==0.1.7
 importlib-metadata==4.6.4
+ipython==7.31.1
+jedi==0.18.0
 jeepney==0.7.1
 kernelstub==3.1.4
 keyring==23.5.0
+kiwisolver==1.3.2
 language-selector==0.1
 launchpadlib==1.10.16
 lazr.restfulclient==0.14.4
 lazr.uri==1.0.6
 louis==3.20.0
+lxml==4.8.0
+lz4==3.1.3+dfsg
 macaroonbakery==1.3.1
+Markdown==3.3.6
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mechanize==0.4.7
 more-itertools==8.10.0
+mpmath==0.0.0
+msgpack==1.0.3
 netaddr==0.8.0
 netifaces==0.11.0
 numpy==1.21.5
 oauthlib==3.2.0
-pandas==1.5.3
+olefile==0.46
+packaging==21.3
+parso==0.8.1
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+ply==3.11
 pop-transition==1.1.2
+prompt-toolkit==3.0.28
 protobuf==3.12.4
+ptyprocess==0.7.0
+py7zr==0.11.3+dfsg
 pycairo==1.20.1
+pychm==0.8.6
+pycryptodomex==3.11.0
 pycups==2.0.1
 pydbus==0.6.0
+Pygments==2.11.2
 PyGObject==3.42.1
 PyJWT==2.3.0
 pymacaroons==0.13.0
 PyNaCl==1.5.0
 pyparsing==2.4.7
+PyQt5==5.15.6
+PyQt5-sip==12.9.1
+PyQtWebEngine==5.15.5
 pyRFC3339==1.1
 python-apt==2.4.0+ubuntu1
-python-dateutil==2.8.2
+python-dateutil==2.8.1
 python-debian===0.1.43ubuntu1
 python-gnupg==0.4.8
 python-xlib==0.29
+pythran==0.10.0
 pytz==2022.1
 pyxdg==0.27
 PyYAML==5.4.1
-repolib==2.2.0
+regex==2021.11.10
+repolib==2.2.1
 repoman==1.4.0
+repoze.lru==0.7
 requests==2.25.1
+requests-toolbelt==0.9.1
+Routes==2.5.1
+rubber==1.6.0
+scipy==1.8.0
 SecretStorage==3.3.1
 sessioninstaller==0.0.0
+sgmllib3k==1.0.0
 six==1.16.0
+soupsieve==2.3.1
+sympy==1.9
 systemd-python==234
+texttable==1.6.4
+traitlets==5.1.1
 ubuntu-advantage-tools==8001
 ubuntu-drivers-common==0.0.0
+ufoLib2==0.13.1
 ufw==0.36.1
+unicodedata2==14.0.0
 urllib3==1.26.5
 wadllib==1.3.6
+wcwidth==0.2.5
+webencodings==0.5.1
+WebOb==1.8.6
 xdg==5
 xkit==0.0.0
+zeroconf==0.38.3
 zipp==1.0.0</code></pre>
 </div>
 </div>
@@ -2518,142 +2582,222 @@ False
 <pre><code>['append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']</code></pre>
 </div>
 </div>
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- Abaixo segue uma tabela de métodos úteis de um objeto que é instância da -->
-<!-- classe `list`. Seja `l = [1, 2, 5, 7]` -->
-<!-- <br> -->
-<!-- | Método    | Exemplo             | Descrição                                                             | -->
-<!-- |----------------|-----------------|----------------------------------------| -->
-<!-- | `append`  | `l.append([1,6,7])` | Adiciona a lista `[1,6,7]` ao final de `l`                            | -->
-<!-- | `clear`   | `l.clear()`         | Remove todos elementos de `l`                                         | -->
-<!-- | `copy`    | `g = l.copy()`      | Cria uma cópia de `l`                                                 | -->
-<!-- | `count`   | `l.count(1)`        | Conta o número de ocorrências de 1 em `l`                             | -->
-<!-- | `extend`  | `l.extend([1,2])`   | Adiciona os elementos de `[1,2]` ao final de `l`                      | -->
-<!-- | `index`   | `l.index(2)`        | Retorna o índice da primeira ocorrência de `2`                        | -->
-<!-- | `insert`  | `l.insert(1, 3)`    | Insere `3` na posição `1` da lista `l`                                | -->
-<!-- | `remove`  | `l.remove(2)`       | Remove a primeira ocorrência de `2` em `l`                            | -->
-<!-- | `pop`     | `l.pop(len(l)-1)`   | Remove o último elemento da lista `l`, devolvendo o elemento removido | -->
-<!-- | `reverse` | `l.reverse()`       | Retorna a lista reversa de `l`                                        | -->
-<!-- | `sort`    | `l.sort()`          | Ordena a lista `l`                                                    | -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- [Exercício]{.red}: Com base no exemplo da tabela acima, descreva a -->
-<!-- diferença dos métodos `append` e `extend`. -->
-<!-- <br> -->
-<!-- Muitos métodos de Python utilizando passagem por referência, isto é, não -->
-<!-- realizam cópias do objeto para realizar a operação. No exemplo que -->
-<!-- segue, note que `l.sort()` ordena a lista `l` sem realizar cópia. Se -->
-<!-- desejamos realizar uma cópia, deveremos usar o método `copy`. -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: Estude o código abaixo. Note que com a função `id()` -->
-<!-- poderemos obter o endereço de memória de objetos em Python. Perceba -->
-<!-- também que operações de atribuição de listas, no caso, `l2 = l1` não -->
-<!-- fará com que `l2` seja uma cópia de `l1`. Isso trará desepenho -->
-<!-- computacional, uma vez que evitará cópias desnecessárias, mas poderá -->
-<!-- pegar de surpresa iniciantes na linguagem. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- l1 = [4, 7, 8, -1] -->
-<!-- # Ordenando l. -->
-<!-- l1.sort() -->
-<!-- # Note que não foi preciso reatribuir l1.sort() à l1 -->
-<!-- # para que l1 tivesse seus valores ordenados -->
-<!-- print(l1) -->
-<!-- # Note também que l2 não é uma cópia de l1 quando -->
-<!-- # utilizamos o operador de atribuição = -->
-<!-- l2 = l1 # l2 não é cópia de l1 -->
-<!-- # Aqui l2 olha para o mesmo endereço de memória de l1. -->
-<!-- print(f"Endereço de l1 = {id(l1)}") -->
-<!-- print(f"Endereço de l2 = {id(l2)}") -->
-<!-- # Se quisermos que l3 seja uma cópia de l1, usamos copy(): -->
-<!-- l3 = l1.copy() -->
-<!-- print(f"Endereço de l1 = {id(l1)}") -->
-<!-- print(f"Endereço de l2 = {id(l2)}") -->
-<!-- # Note que ordenar l2 irá ordenar l1, uma vez que l2 -->
-<!-- # não é cópia de l1. Nesse caso, dizemos que l2 é um view -->
-<!-- # de l1. Ambos apontam para o mesmo enderelo de memória. -->
-<!-- l2.sort() # Ordenar l2 equivale a ordenar l1. -->
-<!-- print(l1) -->
-<!-- ``` -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- [Qual a diferenças de `pop` e `remove`?]{.red} -->
-<!-- <br> -->
-<!-- 1.  O método remove irá remover a primeira ocorrência do valor passado -->
-<!--     ao método. Por exemplo. `l.remove(1)` irá remover a primeira -->
-<!--     ocorrência do valor `1` na lista `l`. Já, fazer `l.pop(1)` irá -->
-<!--     remover o elemento na posição `1` da lista `l`. -->
-<!-- <br> -->
-<!-- 2.  Uma outra diferença importante é que o método `pop` irá devolver o -->
-<!--     elemento removido. Ou seja, `removido = l.pop(1)` irá armazenar o -->
-<!--     valor removido que se encontrava na posição 1 da lista `l` e poderá -->
-<!--     ser armazenado no objeto `removido`. Porém, tente fazer o mesmo com -->
-<!--     `remove`. -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: Removendo elementos da lista `l` usando os métodos -->
-<!-- `pop` e `remove`. Note que `b` será do tipo `None`, uma vez que `remove` -->
-<!-- irá remover a primeira ocorrência de `1` em `l`, mas sem devolver o -->
-<!-- valor removido. -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- # Removendo usando pop: -->
-<!-- l = [1,2,3] -->
-<!-- a = l.pop(1) -->
-<!-- print(a) -->
-<!-- # Removendo usando remove: -->
-<!-- l = [1,2,3] -->
-<!-- b = l.remove(1) -->
-<!-- # Note que b será do tipo None, uma vez que -->
-<!-- # o método remove removerá sem devolver o -->
-<!-- # elemento removido: -->
-<!-- print(b) -->
-<!-- ``` -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- [Exemplo]{.red}: O código que segue apresentam alguns exemplos -->
-<!-- comentados de como acessar elementos de uma lista: -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- # Criando a lista x: -->
-<!-- x = [1, 6, 3, 0, -1, 2, 8, 7] -->
-<!-- print(f"Acessando os três primeiros: {x[:3]}") -->
-<!-- print(f"Quarto ao último elemento de l: {x[4:]}") -->
-<!-- # Note que o último elemento não é incluso no fatiamento: -->
-<!-- print(f"Acessando do segundo ao quinto: {x[1:6]}") -->
-<!-- # Poderemos utilizar um terceiro índice. -->
-<!-- # Note que o último elemento não é incluso no fatiamento: -->
-<!-- print(f"Acessando do primeiro ao sétimo, pulando 2 {x[1:7]}") -->
-<!-- # Poderemos utilizar um terceiro índice para dar o passo: -->
-<!-- print(f"Acessando do 5 ao primeiro, pulando 2: {x[5::-2]}") -->
-<!-- # Note que o elemento na posição 3 não é incluso: -->
-<!-- print(f"Acessando do último ao terceiro, pulando 2: {x[len(x):3:-2]}") -->
-<!-- ``` -->
-<!-- ## Listas -->
-<!-- <br> -->
-<!-- O último índice de uma fatia (slice) de lista ou outra estrutura em -->
-<!-- Python não é incluso porque as fatias usam uma notação "início:fim" onde -->
-<!-- "início" é incluído na fatia e "fim" é excluído. Portanto, ao selecionar -->
-<!-- uma fatia com o índice final desejado, é preciso adicionar 1 a esse -->
-<!-- índice. -->
-<!-- <br> -->
-<!-- Além disso: -->
-<!-- <br> -->
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- l = [4, 8, 0, 12, 9, 13, 11] -->
-<!-- # Acessando todos os elementos de l. É o mesmo -->
-<!-- # que considerar apenas l: -->
-<!-- print(f"l[:] = {l[:]}") -->
-<!-- # Obtendo a lista invertida (passo 1): -->
-<!-- print(f"l[::-1] = {l[::-1]}") -->
-<!-- # Obtendo a lista invertida (passo 2): -->
-<!-- print(f"l[::-2] = {l[::-2]}") -->
-<!-- ``` -->
+</section><section id="listas-8" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p>Abaixo segue uma tabela de métodos úteis de um objeto que é instância da classe <code>list</code>. Seja <code>l = [1, 2, 5, 7]</code></p>
+<p><br></p>
+<table>
+<colgroup>
+<col style="width: 21%">
+<col style="width: 23%">
+<col style="width: 54%">
+</colgroup>
+<thead><tr class="header">
+<th>Método</th>
+<th>Exemplo</th>
+<th>Descrição</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><code>append</code></td>
+<td><code>l.append([1,6,7])</code></td>
+<td>Adiciona a lista <code>[1,6,7]</code> ao final de <code>l</code>
+</td>
+</tr>
+<tr class="even">
+<td><code>clear</code></td>
+<td><code>l.clear()</code></td>
+<td>Remove todos elementos de <code>l</code>
+</td>
+</tr>
+<tr class="odd">
+<td><code>copy</code></td>
+<td><code>g = l.copy()</code></td>
+<td>Cria uma cópia de <code>l</code>
+</td>
+</tr>
+<tr class="even">
+<td><code>count</code></td>
+<td><code>l.count(1)</code></td>
+<td>Conta o número de ocorrências de 1 em <code>l</code>
+</td>
+</tr>
+<tr class="odd">
+<td><code>extend</code></td>
+<td><code>l.extend([1,2])</code></td>
+<td>Adiciona os elementos de <code>[1,2]</code> ao final de <code>l</code>
+</td>
+</tr>
+<tr class="even">
+<td><code>index</code></td>
+<td><code>l.index(2)</code></td>
+<td>Retorna o índice da primeira ocorrência de <code>2</code>
+</td>
+</tr>
+<tr class="odd">
+<td><code>insert</code></td>
+<td><code>l.insert(1, 3)</code></td>
+<td>Insere <code>3</code> na posição <code>1</code> da lista <code>l</code>
+</td>
+</tr>
+<tr class="even">
+<td><code>remove</code></td>
+<td><code>l.remove(2)</code></td>
+<td>Remove a primeira ocorrência de <code>2</code> em <code>l</code>
+</td>
+</tr>
+<tr class="odd">
+<td><code>pop</code></td>
+<td><code>l.pop(len(l)-1)</code></td>
+<td>Remove o último elemento da lista <code>l</code>, devolvendo o elemento removido</td>
+</tr>
+<tr class="even">
+<td><code>reverse</code></td>
+<td><code>l.reverse()</code></td>
+<td>Retorna a lista reversa de <code>l</code>
+</td>
+</tr>
+<tr class="odd">
+<td><code>sort</code></td>
+<td><code>l.sort()</code></td>
+<td>Ordena a lista <code>l</code>
+</td>
+</tr>
+</tbody>
+</table></section><section id="listas-9" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p><span class="red">Exercício</span>: Com base no exemplo da tabela acima, descreva a diferença dos métodos <code>append</code> e <code>extend</code>.</p>
+<p><br></p>
+<p>Muitos métodos de Python utilizando passagem por referência, isto é, não realizam cópias do objeto para realizar a operação. No exemplo que segue, note que <code>l.sort()</code> ordena a lista <code>l</code> sem realizar cópia. Se desejamos realizar uma cópia, deveremos usar o método <code>copy</code>.</p>
+<p><br></p>
+<p><span class="red">Exemplo</span>: Estude o código abaixo. Note que com a função <code>id()</code> poderemos obter o endereço de memória de objetos em Python. Perceba também que operações de atribuição de listas, no caso, <code>l2 = l1</code> não fará com que <code>l2</code> seja uma cópia de <code>l1</code>. Isso trará desepenho computacional, uma vez que evitará cópias desnecessárias, mas poderá pegar de surpresa iniciantes na linguagem.</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb131"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb131-1"><a href="#cb131-1"></a>l1 <span class="op">=</span> [<span class="dv">4</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb131-2"><a href="#cb131-2"></a></span>
+<span id="cb131-3"><a href="#cb131-3"></a><span class="co"># Ordenando l.</span></span>
+<span id="cb131-4"><a href="#cb131-4"></a>l1.sort()</span>
+<span id="cb131-5"><a href="#cb131-5"></a></span>
+<span id="cb131-6"><a href="#cb131-6"></a><span class="co"># Note que não foi preciso reatribuir l1.sort() à l1</span></span>
+<span id="cb131-7"><a href="#cb131-7"></a><span class="co"># para que l1 tivesse seus valores ordenados</span></span>
+<span id="cb131-8"><a href="#cb131-8"></a><span class="bu">print</span>(l1)</span>
+<span id="cb131-9"><a href="#cb131-9"></a></span>
+<span id="cb131-10"><a href="#cb131-10"></a><span class="co"># Note também que l2 não é uma cópia de l1 quando</span></span>
+<span id="cb131-11"><a href="#cb131-11"></a><span class="co"># utilizamos o operador de atribuição =</span></span>
+<span id="cb131-12"><a href="#cb131-12"></a>l2 <span class="op">=</span> l1 <span class="co"># l2 não é cópia de l1</span></span>
+<span id="cb131-13"><a href="#cb131-13"></a></span>
+<span id="cb131-14"><a href="#cb131-14"></a><span class="co"># Aqui l2 olha para o mesmo endereço de memória de l1.</span></span>
+<span id="cb131-15"><a href="#cb131-15"></a><span class="bu">print</span>(<span class="ss">f"Endereço de l1 = </span><span class="sc">{</span><span class="bu">id</span>(l1)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb131-16"><a href="#cb131-16"></a><span class="bu">print</span>(<span class="ss">f"Endereço de l2 = </span><span class="sc">{</span><span class="bu">id</span>(l2)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb131-17"><a href="#cb131-17"></a></span>
+<span id="cb131-18"><a href="#cb131-18"></a><span class="co"># Se quisermos que l3 seja uma cópia de l1, usamos copy():</span></span>
+<span id="cb131-19"><a href="#cb131-19"></a>l3 <span class="op">=</span> l1.copy()</span>
+<span id="cb131-20"><a href="#cb131-20"></a><span class="bu">print</span>(<span class="ss">f"Endereço de l1 = </span><span class="sc">{</span><span class="bu">id</span>(l1)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb131-21"><a href="#cb131-21"></a><span class="bu">print</span>(<span class="ss">f"Endereço de l2 = </span><span class="sc">{</span><span class="bu">id</span>(l2)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb131-22"><a href="#cb131-22"></a></span>
+<span id="cb131-23"><a href="#cb131-23"></a><span class="co"># Note que ordenar l2 irá ordenar l1, uma vez que l2</span></span>
+<span id="cb131-24"><a href="#cb131-24"></a><span class="co"># não é cópia de l1. Nesse caso, dizemos que l2 é um view</span></span>
+<span id="cb131-25"><a href="#cb131-25"></a><span class="co"># de l1. Ambos apontam para o mesmo enderelo de memória.</span></span>
+<span id="cb131-26"><a href="#cb131-26"></a>l2.sort() <span class="co"># Ordenar l2 equivale a ordenar l1.</span></span>
+<span id="cb131-27"><a href="#cb131-27"></a><span class="bu">print</span>(l1)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[-1, 4, 7, 8]
+Endereço de l1 = 140418377138048
+Endereço de l2 = 140418377138048
+Endereço de l1 = 140418377138048
+Endereço de l2 = 140418377138048
+[-1, 4, 7, 8]</code></pre>
+</div>
+</div>
+</section><section id="listas-10" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p><span class="red">Qual a diferenças de <code>pop</code> e <code>remove</code>?</span></p>
+<p><br></p>
+<ol type="1">
+<li class="fragment">O método remove irá remover a primeira ocorrência do valor passado ao método. Por exemplo. <code>l.remove(1)</code> irá remover a primeira ocorrência do valor <code>1</code> na lista <code>l</code>. Já, fazer <code>l.pop(1)</code> irá remover o elemento na posição <code>1</code> da lista <code>l</code>.</li>
+</ol>
+<p><br></p>
+<ol start="2" type="1">
+<li class="fragment">Uma outra diferença importante é que o método <code>pop</code> irá devolver o elemento removido. Ou seja, <code>removido = l.pop(1)</code> irá armazenar o valor removido que se encontrava na posição 1 da lista <code>l</code> e poderá ser armazenado no objeto <code>removido</code>. Porém, tente fazer o mesmo com <code>remove</code>.</li>
+</ol></section><section id="listas-11" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p><span class="red">Exemplo</span>: Removendo elementos da lista <code>l</code> usando os métodos <code>pop</code> e <code>remove</code>. Note que <code>b</code> será do tipo <code>None</code>, uma vez que <code>remove</code> irá remover a primeira ocorrência de <code>1</code> em <code>l</code>, mas sem devolver o valor removido.</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb133"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb133-1"><a href="#cb133-1"></a><span class="co"># Removendo usando pop:</span></span>
+<span id="cb133-2"><a href="#cb133-2"></a>l <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb133-3"><a href="#cb133-3"></a>a <span class="op">=</span> l.pop(<span class="dv">1</span>)</span>
+<span id="cb133-4"><a href="#cb133-4"></a><span class="bu">print</span>(a)</span>
+<span id="cb133-5"><a href="#cb133-5"></a></span>
+<span id="cb133-6"><a href="#cb133-6"></a><span class="co"># Removendo usando remove:</span></span>
+<span id="cb133-7"><a href="#cb133-7"></a>l <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb133-8"><a href="#cb133-8"></a>b <span class="op">=</span> l.remove(<span class="dv">1</span>)</span>
+<span id="cb133-9"><a href="#cb133-9"></a></span>
+<span id="cb133-10"><a href="#cb133-10"></a><span class="co"># Note que b será do tipo None, uma vez que</span></span>
+<span id="cb133-11"><a href="#cb133-11"></a><span class="co"># o método remove removerá sem devolver o</span></span>
+<span id="cb133-12"><a href="#cb133-12"></a><span class="co"># elemento removido:</span></span>
+<span id="cb133-13"><a href="#cb133-13"></a><span class="bu">print</span>(b)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>2
+None</code></pre>
+</div>
+</div>
+</section><section id="listas-12" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p><span class="red">Exemplo</span>: O código que segue apresentam alguns exemplos comentados de como acessar elementos de uma lista:</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb135"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb135-1"><a href="#cb135-1"></a><span class="co"># Criando a lista x:</span></span>
+<span id="cb135-2"><a href="#cb135-2"></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">3</span>, <span class="dv">0</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">8</span>, <span class="dv">7</span>]</span>
+<span id="cb135-3"><a href="#cb135-3"></a></span>
+<span id="cb135-4"><a href="#cb135-4"></a><span class="bu">print</span>(<span class="ss">f"Acessando os três primeiros: </span><span class="sc">{</span>x[:<span class="dv">3</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb135-5"><a href="#cb135-5"></a><span class="bu">print</span>(<span class="ss">f"Quarto ao último elemento de l: </span><span class="sc">{</span>x[<span class="dv">4</span>:]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb135-6"><a href="#cb135-6"></a></span>
+<span id="cb135-7"><a href="#cb135-7"></a><span class="co"># Note que o último elemento não é incluso no fatiamento:</span></span>
+<span id="cb135-8"><a href="#cb135-8"></a><span class="bu">print</span>(<span class="ss">f"Acessando do segundo ao quinto: </span><span class="sc">{</span>x[<span class="dv">1</span>:<span class="dv">6</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb135-9"><a href="#cb135-9"></a></span>
+<span id="cb135-10"><a href="#cb135-10"></a><span class="co"># Poderemos utilizar um terceiro índice.</span></span>
+<span id="cb135-11"><a href="#cb135-11"></a><span class="co"># Note que o último elemento não é incluso no fatiamento:</span></span>
+<span id="cb135-12"><a href="#cb135-12"></a><span class="bu">print</span>(<span class="ss">f"Acessando do primeiro ao sétimo, pulando 2 </span><span class="sc">{</span>x[<span class="dv">1</span>:<span class="dv">7</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb135-13"><a href="#cb135-13"></a></span>
+<span id="cb135-14"><a href="#cb135-14"></a><span class="co"># Poderemos utilizar um terceiro índice para dar o passo:</span></span>
+<span id="cb135-15"><a href="#cb135-15"></a><span class="bu">print</span>(<span class="ss">f"Acessando do 5 ao primeiro, pulando 2: </span><span class="sc">{</span>x[<span class="dv">5</span>::<span class="op">-</span><span class="dv">2</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb135-16"><a href="#cb135-16"></a></span>
+<span id="cb135-17"><a href="#cb135-17"></a><span class="co"># Note que o elemento na posição 3 não é incluso:</span></span>
+<span id="cb135-18"><a href="#cb135-18"></a><span class="bu">print</span>(<span class="ss">f"Acessando do último ao terceiro, pulando 2: </span><span class="sc">{</span>x[<span class="bu">len</span>(x):<span class="dv">3</span>:<span class="op">-</span><span class="dv">2</span>]<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Acessando os três primeiros: [1, 6, 3]
+Quarto ao último elemento de l: [-1, 2, 8, 7]
+Acessando do segundo ao quinto: [6, 3, 0, -1, 2]
+Acessando do primeiro ao sétimo, pulando 2 [6, 3, 0, -1, 2, 8]
+Acessando do 5 ao primeiro, pulando 2: [2, 0, 6]
+Acessando do último ao terceiro, pulando 2: [7, 2]</code></pre>
+</div>
+</div>
+</section><section id="listas-13" class="slide level2"><h2>Listas</h2>
+<p><br></p>
+<p>O último índice de uma fatia (slice) de lista ou outra estrutura em Python não é incluso porque as fatias usam uma notação “início:fim” onde “início” é incluído na fatia e “fim” é excluído. Portanto, ao selecionar uma fatia com o índice final desejado, é preciso adicionar 1 a esse índice.</p>
+<p><br></p>
+<p>Além disso:</p>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb137"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb137-1"><a href="#cb137-1"></a>l <span class="op">=</span> [<span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">0</span>, <span class="dv">12</span>, <span class="dv">9</span>, <span class="dv">13</span>, <span class="dv">11</span>]</span>
+<span id="cb137-2"><a href="#cb137-2"></a></span>
+<span id="cb137-3"><a href="#cb137-3"></a><span class="co"># Acessando todos os elementos de l. É o mesmo</span></span>
+<span id="cb137-4"><a href="#cb137-4"></a><span class="co"># que considerar apenas l:</span></span>
+<span id="cb137-5"><a href="#cb137-5"></a><span class="bu">print</span>(<span class="ss">f"l[:] = </span><span class="sc">{</span>l[:]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb137-6"><a href="#cb137-6"></a></span>
+<span id="cb137-7"><a href="#cb137-7"></a><span class="co"># Obtendo a lista invertida (passo 1):</span></span>
+<span id="cb137-8"><a href="#cb137-8"></a><span class="bu">print</span>(<span class="ss">f"l[::-1] = </span><span class="sc">{</span>l[::<span class="op">-</span><span class="dv">1</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb137-9"><a href="#cb137-9"></a></span>
+<span id="cb137-10"><a href="#cb137-10"></a><span class="co"># Obtendo a lista invertida (passo 2):</span></span>
+<span id="cb137-11"><a href="#cb137-11"></a><span class="bu">print</span>(<span class="ss">f"l[::-2] = </span><span class="sc">{</span>l[::<span class="op">-</span><span class="dv">2</span>]<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>l[:] = [4, 8, 0, 12, 9, 13, 11]
+l[::-1] = [11, 13, 9, 12, 0, 8, 4]
+l[::-2] = [11, 9, 0, 4]</code></pre>
+</div>
+</div>
 <!-- ## Tuplas -->
 <!-- <br> -->
 <!-- Diferentemente de [listas]{.orange}, que que poderemos alterar os seus -->

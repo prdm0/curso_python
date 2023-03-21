@@ -101,9 +101,9 @@ Linguagem de Programação
 
 ```{r eval=require('leaflet'), width = 100, height = 100, echo = FALSE, fig.cap="Departamento de Estatística da UFPB."}
 library(leaflet)
-leaflet() |>  
-  addMarkers(-34.846199, -7.140400) |> 
-  leaflet::addTiles() |> 
+leaflet() |>
+  addMarkers(-34.846199, -7.140400) |>
+  leaflet::addTiles() |>
   setView(
   -34.846199, -7.140400, zoom = 37,
   options = popupOptions(
@@ -2680,196 +2680,196 @@ cujos nomes não estão envoltos de `__`, isto é, nos métodos que não são
 [x for x in dir(list) if not x.startswith('_')]
 ```
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- Abaixo segue uma tabela de métodos úteis de um objeto que é instância da -->
-<!-- classe `list`. Seja `l = [1, 2, 5, 7]` -->
+Abaixo segue uma tabela de métodos úteis de um objeto que é instância da
+classe `list`. Seja `l = [1, 2, 5, 7]`
 
-<!-- <br> -->
+<br>
 
-<!-- | Método    | Exemplo             | Descrição                                                             | -->
-<!-- |----------------|-----------------|----------------------------------------| -->
-<!-- | `append`  | `l.append([1,6,7])` | Adiciona a lista `[1,6,7]` ao final de `l`                            | -->
-<!-- | `clear`   | `l.clear()`         | Remove todos elementos de `l`                                         | -->
-<!-- | `copy`    | `g = l.copy()`      | Cria uma cópia de `l`                                                 | -->
-<!-- | `count`   | `l.count(1)`        | Conta o número de ocorrências de 1 em `l`                             | -->
-<!-- | `extend`  | `l.extend([1,2])`   | Adiciona os elementos de `[1,2]` ao final de `l`                      | -->
-<!-- | `index`   | `l.index(2)`        | Retorna o índice da primeira ocorrência de `2`                        | -->
-<!-- | `insert`  | `l.insert(1, 3)`    | Insere `3` na posição `1` da lista `l`                                | -->
-<!-- | `remove`  | `l.remove(2)`       | Remove a primeira ocorrência de `2` em `l`                            | -->
-<!-- | `pop`     | `l.pop(len(l)-1)`   | Remove o último elemento da lista `l`, devolvendo o elemento removido | -->
-<!-- | `reverse` | `l.reverse()`       | Retorna a lista reversa de `l`                                        | -->
-<!-- | `sort`    | `l.sort()`          | Ordena a lista `l`                                                    | -->
+| Método    | Exemplo             | Descrição                                                             |
+|----------------|-----------------|----------------------------------------|
+| `append`  | `l.append([1,6,7])` | Adiciona a lista `[1,6,7]` ao final de `l`                            |
+| `clear`   | `l.clear()`         | Remove todos elementos de `l`                                         |
+| `copy`    | `g = l.copy()`      | Cria uma cópia de `l`                                                 |
+| `count`   | `l.count(1)`        | Conta o número de ocorrências de 1 em `l`                             |
+| `extend`  | `l.extend([1,2])`   | Adiciona os elementos de `[1,2]` ao final de `l`                      |
+| `index`   | `l.index(2)`        | Retorna o índice da primeira ocorrência de `2`                        |
+| `insert`  | `l.insert(1, 3)`    | Insere `3` na posição `1` da lista `l`                                |
+| `remove`  | `l.remove(2)`       | Remove a primeira ocorrência de `2` em `l`                            |
+| `pop`     | `l.pop(len(l)-1)`   | Remove o último elemento da lista `l`, devolvendo o elemento removido |
+| `reverse` | `l.reverse()`       | Retorna a lista reversa de `l`                                        |
+| `sort`    | `l.sort()`          | Ordena a lista `l`                                                    |
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- [Exercício]{.red}: Com base no exemplo da tabela acima, descreva a -->
-<!-- diferença dos métodos `append` e `extend`. -->
+[Exercício]{.red}: Com base no exemplo da tabela acima, descreva a
+diferença dos métodos `append` e `extend`.
 
-<!-- <br> -->
+<br>
 
-<!-- Muitos métodos de Python utilizando passagem por referência, isto é, não -->
-<!-- realizam cópias do objeto para realizar a operação. No exemplo que -->
-<!-- segue, note que `l.sort()` ordena a lista `l` sem realizar cópia. Se -->
-<!-- desejamos realizar uma cópia, deveremos usar o método `copy`. -->
+Muitos métodos de Python utilizando passagem por referência, isto é, não
+realizam cópias do objeto para realizar a operação. No exemplo que
+segue, note que `l.sort()` ordena a lista `l` sem realizar cópia. Se
+desejamos realizar uma cópia, deveremos usar o método `copy`.
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: Estude o código abaixo. Note que com a função `id()` -->
-<!-- poderemos obter o endereço de memória de objetos em Python. Perceba -->
-<!-- também que operações de atribuição de listas, no caso, `l2 = l1` não -->
-<!-- fará com que `l2` seja uma cópia de `l1`. Isso trará desepenho -->
-<!-- computacional, uma vez que evitará cópias desnecessárias, mas poderá -->
-<!-- pegar de surpresa iniciantes na linguagem. -->
+[Exemplo]{.red}: Estude o código abaixo. Note que com a função `id()`
+poderemos obter o endereço de memória de objetos em Python. Perceba
+também que operações de atribuição de listas, no caso, `l2 = l1` não
+fará com que `l2` seja uma cópia de `l1`. Isso trará desepenho
+computacional, uma vez que evitará cópias desnecessárias, mas poderá
+pegar de surpresa iniciantes na linguagem.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- l1 = [4, 7, 8, -1] -->
+```{python}
+#| results: hold
+l1 = [4, 7, 8, -1]
 
-<!-- # Ordenando l. -->
-<!-- l1.sort() -->
+# Ordenando l.
+l1.sort()
 
-<!-- # Note que não foi preciso reatribuir l1.sort() à l1 -->
-<!-- # para que l1 tivesse seus valores ordenados -->
-<!-- print(l1) -->
+# Note que não foi preciso reatribuir l1.sort() à l1
+# para que l1 tivesse seus valores ordenados
+print(l1)
 
-<!-- # Note também que l2 não é uma cópia de l1 quando -->
-<!-- # utilizamos o operador de atribuição = -->
-<!-- l2 = l1 # l2 não é cópia de l1 -->
+# Note também que l2 não é uma cópia de l1 quando
+# utilizamos o operador de atribuição =
+l2 = l1 # l2 não é cópia de l1
 
-<!-- # Aqui l2 olha para o mesmo endereço de memória de l1. -->
-<!-- print(f"Endereço de l1 = {id(l1)}") -->
-<!-- print(f"Endereço de l2 = {id(l2)}") -->
+# Aqui l2 olha para o mesmo endereço de memória de l1.
+print(f"Endereço de l1 = {id(l1)}")
+print(f"Endereço de l2 = {id(l2)}")
 
-<!-- # Se quisermos que l3 seja uma cópia de l1, usamos copy(): -->
-<!-- l3 = l1.copy() -->
-<!-- print(f"Endereço de l1 = {id(l1)}") -->
-<!-- print(f"Endereço de l2 = {id(l2)}") -->
+# Se quisermos que l3 seja uma cópia de l1, usamos copy():
+l3 = l1.copy()
+print(f"Endereço de l1 = {id(l1)}")
+print(f"Endereço de l2 = {id(l2)}")
 
-<!-- # Note que ordenar l2 irá ordenar l1, uma vez que l2 -->
-<!-- # não é cópia de l1. Nesse caso, dizemos que l2 é um view -->
-<!-- # de l1. Ambos apontam para o mesmo enderelo de memória. -->
-<!-- l2.sort() # Ordenar l2 equivale a ordenar l1. -->
-<!-- print(l1) -->
-<!-- ``` -->
+# Note que ordenar l2 irá ordenar l1, uma vez que l2
+# não é cópia de l1. Nesse caso, dizemos que l2 é um view
+# de l1. Ambos apontam para o mesmo enderelo de memória.
+l2.sort() # Ordenar l2 equivale a ordenar l1.
+print(l1)
+```
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- [Qual a diferenças de `pop` e `remove`?]{.red} -->
+[Qual a diferenças de `pop` e `remove`?]{.red}
 
-<!-- <br> -->
+<br>
 
-<!-- 1.  O método remove irá remover a primeira ocorrência do valor passado -->
-<!--     ao método. Por exemplo. `l.remove(1)` irá remover a primeira -->
-<!--     ocorrência do valor `1` na lista `l`. Já, fazer `l.pop(1)` irá -->
-<!--     remover o elemento na posição `1` da lista `l`. -->
+1.  O método remove irá remover a primeira ocorrência do valor passado
+    ao método. Por exemplo. `l.remove(1)` irá remover a primeira
+    ocorrência do valor `1` na lista `l`. Já, fazer `l.pop(1)` irá
+    remover o elemento na posição `1` da lista `l`.
 
-<!-- <br> -->
+<br>
 
-<!-- 2.  Uma outra diferença importante é que o método `pop` irá devolver o -->
-<!--     elemento removido. Ou seja, `removido = l.pop(1)` irá armazenar o -->
-<!--     valor removido que se encontrava na posição 1 da lista `l` e poderá -->
-<!--     ser armazenado no objeto `removido`. Porém, tente fazer o mesmo com -->
-<!--     `remove`. -->
+2.  Uma outra diferença importante é que o método `pop` irá devolver o
+    elemento removido. Ou seja, `removido = l.pop(1)` irá armazenar o
+    valor removido que se encontrava na posição 1 da lista `l` e poderá
+    ser armazenado no objeto `removido`. Porém, tente fazer o mesmo com
+    `remove`.
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: Removendo elementos da lista `l` usando os métodos -->
-<!-- `pop` e `remove`. Note que `b` será do tipo `None`, uma vez que `remove` -->
-<!-- irá remover a primeira ocorrência de `1` em `l`, mas sem devolver o -->
-<!-- valor removido. -->
+[Exemplo]{.red}: Removendo elementos da lista `l` usando os métodos
+`pop` e `remove`. Note que `b` será do tipo `None`, uma vez que `remove`
+irá remover a primeira ocorrência de `1` em `l`, mas sem devolver o
+valor removido.
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| results: hold -->
+```{python}
+#| results: hold
 
-<!-- # Removendo usando pop: -->
-<!-- l = [1,2,3] -->
-<!-- a = l.pop(1) -->
-<!-- print(a) -->
+# Removendo usando pop:
+l = [1,2,3]
+a = l.pop(1)
+print(a)
 
-<!-- # Removendo usando remove: -->
-<!-- l = [1,2,3] -->
-<!-- b = l.remove(1) -->
+# Removendo usando remove:
+l = [1,2,3]
+b = l.remove(1)
 
-<!-- # Note que b será do tipo None, uma vez que -->
-<!-- # o método remove removerá sem devolver o -->
-<!-- # elemento removido: -->
-<!-- print(b) -->
-<!-- ``` -->
+# Note que b será do tipo None, uma vez que
+# o método remove removerá sem devolver o
+# elemento removido:
+print(b)
+```
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- [Exemplo]{.red}: O código que segue apresentam alguns exemplos -->
-<!-- comentados de como acessar elementos de uma lista: -->
+[Exemplo]{.red}: O código que segue apresentam alguns exemplos
+comentados de como acessar elementos de uma lista:
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- # Criando a lista x: -->
-<!-- x = [1, 6, 3, 0, -1, 2, 8, 7] -->
+```{python}
+#| results: hold
+# Criando a lista x:
+x = [1, 6, 3, 0, -1, 2, 8, 7]
 
-<!-- print(f"Acessando os três primeiros: {x[:3]}") -->
-<!-- print(f"Quarto ao último elemento de l: {x[4:]}") -->
+print(f"Acessando os três primeiros: {x[:3]}")
+print(f"Quarto ao último elemento de l: {x[4:]}")
 
-<!-- # Note que o último elemento não é incluso no fatiamento: -->
-<!-- print(f"Acessando do segundo ao quinto: {x[1:6]}") -->
+# Note que o último elemento não é incluso no fatiamento:
+print(f"Acessando do segundo ao quinto: {x[1:6]}")
 
-<!-- # Poderemos utilizar um terceiro índice. -->
-<!-- # Note que o último elemento não é incluso no fatiamento: -->
-<!-- print(f"Acessando do primeiro ao sétimo, pulando 2 {x[1:7]}") -->
+# Poderemos utilizar um terceiro índice.
+# Note que o último elemento não é incluso no fatiamento:
+print(f"Acessando do primeiro ao sétimo, pulando 2 {x[1:7]}")
 
-<!-- # Poderemos utilizar um terceiro índice para dar o passo: -->
-<!-- print(f"Acessando do 5 ao primeiro, pulando 2: {x[5::-2]}") -->
+# Poderemos utilizar um terceiro índice para dar o passo:
+print(f"Acessando do 5 ao primeiro, pulando 2: {x[5::-2]}")
 
-<!-- # Note que o elemento na posição 3 não é incluso: -->
-<!-- print(f"Acessando do último ao terceiro, pulando 2: {x[len(x):3:-2]}") -->
-<!-- ``` -->
+# Note que o elemento na posição 3 não é incluso:
+print(f"Acessando do último ao terceiro, pulando 2: {x[len(x):3:-2]}")
+```
 
-<!-- ## Listas -->
+## Listas
 
-<!-- <br> -->
+<br>
 
-<!-- O último índice de uma fatia (slice) de lista ou outra estrutura em -->
-<!-- Python não é incluso porque as fatias usam uma notação "início:fim" onde -->
-<!-- "início" é incluído na fatia e "fim" é excluído. Portanto, ao selecionar -->
-<!-- uma fatia com o índice final desejado, é preciso adicionar 1 a esse -->
-<!-- índice. -->
+O último índice de uma fatia (slice) de lista ou outra estrutura em
+Python não é incluso porque as fatias usam uma notação "início:fim" onde
+"início" é incluído na fatia e "fim" é excluído. Portanto, ao selecionar
+uma fatia com o índice final desejado, é preciso adicionar 1 a esse
+índice.
 
-<!-- <br> -->
+<br>
 
-<!-- Além disso: -->
+Além disso:
 
-<!-- <br> -->
+<br>
 
-<!-- ```{python} -->
-<!-- #| results: hold -->
-<!-- l = [4, 8, 0, 12, 9, 13, 11] -->
+```{python}
+#| results: hold
+l = [4, 8, 0, 12, 9, 13, 11]
 
-<!-- # Acessando todos os elementos de l. É o mesmo -->
-<!-- # que considerar apenas l: -->
-<!-- print(f"l[:] = {l[:]}") -->
+# Acessando todos os elementos de l. É o mesmo
+# que considerar apenas l:
+print(f"l[:] = {l[:]}")
 
-<!-- # Obtendo a lista invertida (passo 1): -->
-<!-- print(f"l[::-1] = {l[::-1]}") -->
+# Obtendo a lista invertida (passo 1):
+print(f"l[::-1] = {l[::-1]}")
 
-<!-- # Obtendo a lista invertida (passo 2): -->
-<!-- print(f"l[::-2] = {l[::-2]}") -->
-<!-- ``` -->
+# Obtendo a lista invertida (passo 2):
+print(f"l[::-2] = {l[::-2]}")
+```
 
 <!-- ## Tuplas -->
 
